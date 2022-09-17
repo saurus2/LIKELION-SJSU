@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: 'Stint Ultra Condensed', cursive;
+  padding: 20px;
+
+}
+
+h2 {
+  color: yellow;
+}
+
+p {
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 20px
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: pink;
+}
+
+.footnote p {
+  font-weight: 100;
+}
+
+main {
+
+}
