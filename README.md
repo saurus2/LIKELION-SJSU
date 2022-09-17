@@ -9,3 +9,8 @@
 # Git Hub 사용법
 https://aonee.tistory.com/15?category=377054
 https://www.slideshare.net/ibare/dvcs-git?fbclid=IwAR2VS-gARU3x-N18QSNdXSDJx3LMvwe0dZ_H1DrS1gZNc9gdNWWL5Lt8r2s
+
+# 예제 개자이너
+https://nuuneoi.com/profile
+
+## git 정보 등록
