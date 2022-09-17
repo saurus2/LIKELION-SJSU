@@ -14,3 +14,8 @@ https://www.slideshare.net/ibare/dvcs-git?fbclid=IwAR2VS-gARU3x-N18QSNdXSDJx3LMv
 https://nuuneoi.com/profile
 
 ## git 정보 등록
+git config --global user.name ?  
+git config --global user.email ?
+
+# git 설치 Window 하는법
+https://taewow.tistory.com/13
