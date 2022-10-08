@@ -15,8 +15,11 @@ Practicing HTML, CSS, and JavaScript that we learned from CODE LION.
 
 ## Schedule
 Week 1 : Meeting to decide an idea
+
 Week 2 : Set the structure of HTML format, organize the logic of program
+
 Week 3 : Implement JavaScript in HTML code
+
 Week 4 : Implement CSS for user interface
 
 ## Variable Introduction
