@@ -5,28 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link rel="main" href="resumepage.html">
 </head>
 <body>
 <div class="mainbox">
     <div class="title-box">
-        <h1>RESUME GENERATOR</h1>
-        <p class="name-text">please select resume form </p>
+        <h2>RESUME GENERATOR</h2>
+        <p>please select resume form </p>
       </div>
-      
     <div class="resume-pic">
         <img class="resume-img" src="images/form1.png">
         <img class="resume-img" src="images/form2.png">
         <img class="resume-img" src="images/form1.png">
     </div>
      
-    <div class="input_info">
-    First name:
-    <input type="text" name="first_name" value="" maxlength="100"/><br/>
-    Last name:
-    <input type="text" name="last_name" value="" maxlength="100" /><br/>
+    <div class="input">
+        <h2>personal information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="job">Job Title:</label>
+        <input type="text" id="job" name="job"><br>
+        
+    <section>
+        <h2>About You:</h2>
+        <textarea class="form-control" rows="3" id="content" onkeydown="counter();">Enter information about yourself</textarea>
+        <span id="count">(0/200)</span>
+        </p>
+    </section>
 
-    <input type="submit" value="Submit" />
+    <div class="float-wrap">
+        <h2>Personal Experience about your career</h2>
+        <label for="experience1">Experience1:</label>
+        <input type="text" id="experience1" name="experience1"><br>
+        
+        <label for="year">year(start-end):</label>
+        <input type="text" id="year" name="year"> <br>
+        
+        <label for="postion">postion:</label>
+        <input type="text" id="position" name="position"> <br>
+        
+        <label for="skill">skill used:</label> 
+        <textarea class="form-control" rows="1" id="content" onkeydown="counter();">enter the information</textarea>
+        <span id="count">(0/50)</span>
+        </p>
+    </div>
+
+        <button id="submit">
+            <a type="button" href="/resumepage.html">submit</a>
+        </button>
     </div>
 
 </div>
