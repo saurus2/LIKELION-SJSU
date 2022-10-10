@@ -11,53 +11,70 @@
 </head>
 <body>
 <div class="mainbox">
+
+    <h1 class = "maintitle"> Resume Generator </h1>
+    <br>
     <div class="title-box">
-        <h2>RESUME GENERATOR</h2>
-        <p>please select resume form </p>
+        <h2>Resume Options</h2>
+        <p>Please select Resume form </p>
       </div>
-    <div class="resume-pic">
-        <img class="resume-img" src="images/form1.png">
-        <img class="resume-img" src="images/form2.png">
-        <img class="resume-img" src="images/form1.png">
+    <div class="resume-pic-wrap">
+        <img class="resume-img" src="images/form1.png" alt="option1" width="auto" height="auto" />
+        <img class="resume-img" src="images/form2.png" alt="option2"> 
+        <img class="resume-img" src="images/form3.png" alt="option3"> 
     </div>
-     
+    <br> 
+    <br>
+
     <div class="input">
-        <h2>personal information</h2>
+        <h2>Personal Information</h2>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br>
         <label for="job">Job Title:</label>
         <input type="text" id="job" name="job"><br>
-        
+        <br>
+        <br>
+
     <section>
-        <h2>About You:</h2>
+        <h2>About You</h2>
         <textarea class="form-control" rows="3" id="content" onkeydown="counter();">Enter information about yourself</textarea>
         <span id="count">(0/200)</span>
         </p>
     </section>
+    <br>
+    <br>
 
     <div class="float-wrap">
-        <h2>Personal Experience about your career</h2>
-        <label for="experience1">Experience1:</label>
+        <h2>Personal Experience about your Career</h2>
+        <label for="experience1">Experience 1: </label>
         <input type="text" id="experience1" name="experience1"><br>
         
-        <label for="year">year(start-end):</label>
+        <label for="year">Year (Start-End):</label>
         <input type="text" id="year" name="year"> <br>
         
-        <label for="postion">postion:</label>
+        <label for="postion">Position:</label>
         <input type="text" id="position" name="position"> <br>
         
-        <label for="skill">skill used:</label> 
-        <textarea class="form-control" rows="1" id="content" onkeydown="counter();">enter the information</textarea>
+        <label for="skill">Skill Used:</label> 
+        <textarea class="form-control" rows="1" id="content" onkeydown="counter();">Enter the information</textarea>
         <span id="count">(0/50)</span>
         </p>
     </div>
+    <br>
+    <br>
 
         <button id="submit">
-            <a type="button" href="/resumepage.html">submit</a>
+            <a type="button" href="/resumepage.html">Submit</a>
         </button>
+        <br>
+        <br>
     </div>
 
+
 </div>
+<footer>
+    <p> Copyright CODE LION All rights reserved. </p>
+</footer>
     
 </body>
 </html>
