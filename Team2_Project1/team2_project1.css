@@ -1,11 +1,84 @@
-body{
-    background-color:  #FFBB50;
-}
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
 h1{
-    font-size:  30px;
+    font-size:  80px;
+    text-shadow: 3px 3px #219EBC;
     text-align: center;
-    color :aqua;
+    color :#023047;
 }
+
+body{
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAAXNSR0IArs4c6QAAADtJREFUKFNjZCACMBJSw2Tg/h+vIpCCfxd2MhI0CWQTVkUwE2BOwVCErgCnSeiegZuEzQQU6/ApACkEAO5RFYLEx1njAAAAAElFTkSuQmCC
+) repeat;
+ background-color:  #FFBB50;
+}
+
 .bill{
     width: 85px;
+}
+
+input {
+  font-family: 'Silkscreen', cursive;
+  font-size: 12px;
+  background-color: white;
+  color :#023047;
+  border: none;
+  padding: 15px 15px;
+  text-align: left;
+  display: inline-block;
+}
+
+.outer, outer > div {
+  border: 2px;
+  width: 100px;
+  background-color: white;
+  height: 20px;
+  display: inline-block;
+}
+
+.button {
+  font-family: 'Silkscreen', cursive;
+  font-size: 16px;
+  background-color: #219EBC;
+  background-size: 5px;
+  color :#023047;
+  border: none;
+  padding: 15px 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+.button2 {
+  font-family: 'Silkscreen', cursive;
+  font-size: 16px;
+  background-color: #219EBC;
+  background-size: 5px;
+  color :#023047;
+  border: none;
+  padding: 15px 31px;
+  text-align: center;
+  display: inline-block;
+}
+
+.button:active {
+    vertical-align: top;
+    padding-top: 8px;
+}
+
+.button2:active {
+  vertical-align: top;
+  padding-top: 8px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    font-size: 14px;
+    color: #023047;
+    margin-top: 150px;
+    margin-bottom: 20px;
 }

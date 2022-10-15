@@ -4,22 +4,51 @@
         <title>Lion Tip Calculator</title>
         <link rel = "stylesheet", href = "team2_project1.css">
     </head>
+
     <body>
+      <div class ="myDiv"></div>
+
         <h1>SPLITTER</h1>
         <h3>Bill</h3>
+
         <span class = "bill">
             <input type = "text", placeholder="$">
         </span>
         <h3>After Tax</h3>
-        <p>Total: <strong>$<output name="amount" for="hours rate vat">0</output></strong></p>
-    </form>
-    
+
+        <div class="outer">
+            <div> total: here </div>
+          </div>
+
+
         <h3>Select Tip%</h3>
+
+          <button class="button">15%</button>
+          <button class="button">18%</button>
+          <br />
+          <button class="button">20%</button>
+          <button class="button2">CUSTOM</button>
+
+          <p>Total:$<output name="amount" for="hours rate vat"> <div class="outer">
+              <div> 0 </div>
+            </div>
+          </output></p>
+
+
         <h3>Number of People</h3>
         <span class = "bill">
             <input type = "text", placeholder="#">
         </span>
 
+        <p>Per Person:$<output name="amount" for="hours rate vat"> <div class="outer">
+            <div> 0 </div>
+          </div>
+        </output></p>
+
     </body>
+
+    <footer>
+      © Hanbee Cho, Dasom Lee, Hyungkyun Kim
+    </footer>
 
 </html>
