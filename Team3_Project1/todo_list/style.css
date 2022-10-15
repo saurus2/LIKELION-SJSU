@@ -6,9 +6,9 @@ body, h1, h2 {
 
 body {
     background-image: url('background.png');
-    background-position: center;
+    background-position: auto;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #todo{
@@ -21,12 +21,8 @@ body {
     font-size: 20px;
 }
 
-#edit{
-    font-size: 30px;
-    border: 0;
-}
-
 span {
     padding: 30px;
     display: block;
 }
+
