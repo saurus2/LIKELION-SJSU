@@ -126,11 +126,18 @@ position: fixed;
   padding-top: 8px;
 }
 
+img {
+  padding-left: 400px;
+  padding-top: 400px;
+  position: fixed;
+  margin-right: 200px;
+}
+
 footer {
     text-align: center;
     font-family: 'Silkscreen', cursive;
     font-size: 14px;
-    color: #023047;
+    color: #219EBC;
     margin-top: 800px;
     margin-bottom: 20px;
 }
