@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lion Tip Calculator</title>
-        <link rel = "stylesheet", href = "team2_project1.css">
-    </head>
 
-    <body>
-      <div class ="myDiv"></div>
+<head>
+  <title>Lion Tip Calculator</title>
+  <link rel="stylesheet" , href="team2_project1.css">
+</head>
 
-        <h1>SPLITTER</h1>
-        <h3>Bill</h3>
+<body>
 
-        <span class = "bill">
-            <input type = "text", placeholder="$">
-        </span>
-        <h3>After Tax</h3>
+  <h1>SPLITTER</h1>
 
-        <div class="outer">
-            <div> total: here </div>
-          </div>
+  <div class="left">
+    <h3>Bill:</h3>
+    <input type="text" , placeholder="$">
+    <h3>After Tax</h3>
+
+    <div class="outer">
+      <div> total: here </div>
+    </div>
+
+    <h3>Select Tip%</h3>
+
+    <button class="button">15%</button>
+    <button class="button">18%</button>
+    <br /><br />
+    <button class="button">20%</button>
+    <button class="button2">CUSTOM</button>
+
+    <h3>Number of People</h3>
+    <div class="bill">
+      <input type="text" , placeholder="#">
+    </div>
+
+  </div>
 
 
-        <h3>Select Tip%</h3>
-
-          <button class="button">15%</button>
-          <button class="button">18%</button>
-          <br />
-          <button class="button">20%</button>
-          <button class="button2">CUSTOM</button>
-
-          <p>Total:$<output name="amount" for="hours rate vat"> <div class="outer">
+  <div class="right">
+        <p>Total:$<output name="amount" for="hours rate vat">
+            <div class="outer">
               <div> 0 </div>
             </div>
           </output></p>
 
+          <p>Per Person:$<output name="amount" for="hours rate vat">
+              <div class="outer">
+                <div> 0 </div>
+              </div>
+            </output></p>
+  </div>
 
-        <h3>Number of People</h3>
-        <span class = "bill">
-            <input type = "text", placeholder="#">
-        </span>
+  <div class="random">
+    <p>
+      Pick Who Will Pay Today!!
+    </p>
+    <button class="button3">Click Me!</button>
+  </div>
 
-        <p>Per Person:$<output name="amount" for="hours rate vat"> <div class="outer">
-            <div> 0 </div>
-          </div>
-        </output></p>
+</body>
 
-    </body>
-
-    <footer>
-      © Hanbee Cho, Dasom Lee, Hyungkyun Kim
-    </footer>
+<footer>
+  © Hanbee Cho, Dasom Lee, Hyungkyun Kim
+</footer>
 
 </html>

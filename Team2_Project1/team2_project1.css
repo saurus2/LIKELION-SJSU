@@ -3,9 +3,9 @@
 
 h1{
     font-size:  80px;
-    text-shadow: 3px 3px #219EBC;
+    text-shadow: 5px 5px #023047;
     text-align: center;
-    color :#023047;
+    color :#219EBC;
 }
 
 body{
@@ -15,10 +15,6 @@ body{
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAAXNSR0IArs4c6QAAADtJREFUKFNjZCACMBJSw2Tg/h+vIpCCfxd2MhI0CWQTVkUwE2BOwVCErgCnSeiegZuEzQQU6/ApACkEAO5RFYLEx1njAAAAAElFTkSuQmCC
 ) repeat;
  background-color:  #FFBB50;
-}
-
-.bill{
-    width: 85px;
 }
 
 input {
@@ -40,14 +36,69 @@ input {
   display: inline-block;
 }
 
+.right {
+  float: right;
+  padding-right: 200px;
+  padding-left: 70px;
+  margin-right: 50px;
+  margin-left: 700px;
+  text-align: left;
+  color: white;
+  background-color: #023047;
+  box-shadow: 10px 10px #219EBC;
+  position: fixed;
+}
+
+.left{
+float: left;
+padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 50px;
+margin-left: 70px;
+text-align: left;
+color: white;
+background-color: #023047;
+box-shadow: 10px 10px #219EBC;
+position: fixed;
+}
+
+.random {
+  float: left;
+  padding-left: 70px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  margin-top: 200px;
+  margin-left: 700px;
+  text-align: left;
+  color: white;
+  background-color: #219EBC;
+  box-shadow: 10px 10px #023047;
+  position: fixed;
+}
+
+.button3 {
+  font-family: 'Silkscreen', cursive;
+  font-size: 16px;
+  background-size: 5px;
+  color :#219EBC;
+  box-shadow: 5px 5px #023047;
+  border: none;
+}
+
+.button3:active {
+  vertical-align: top;
+  padding-bottom: 8px;
+}
+
 .button {
   font-family: 'Silkscreen', cursive;
   font-size: 16px;
   background-color: #219EBC;
   background-size: 5px;
-  color :#023047;
+  color :#white;
   border: none;
   padding: 15px 50px;
+  box-shadow: 5px 5px #023047;
   text-align: center;
   display: inline-block;
 }
@@ -55,11 +106,12 @@ input {
 .button2 {
   font-family: 'Silkscreen', cursive;
   font-size: 16px;
-  background-color: #219EBC;
+  background-color: white;
   background-size: 5px;
   color :#023047;
   border: none;
   padding: 15px 31px;
+  box-shadow: 5px 5px #219EBC;
   text-align: center;
   display: inline-block;
 }
@@ -79,6 +131,6 @@ footer {
     font-family: 'Silkscreen', cursive;
     font-size: 14px;
     color: #023047;
-    margin-top: 150px;
+    margin-top: 800px;
     margin-bottom: 20px;
 }
