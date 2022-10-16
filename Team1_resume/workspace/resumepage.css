@@ -1,17 +1,21 @@
-@import url ('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
 * {
    font-family: 'Montserrat';
 }
  
+
 .maintitle {
   
    font-size: 40px;
    font-weight: bold;
    text-align: center;
    margin: 30px;
+   
+   
 }
  
 .mainbox {
+
    width: 800px;
    padding: 30px;
    margin: 30px;
@@ -19,27 +23,11 @@
    margin-left: auto;
    border: 1px solid #ebebeb;
    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+   
    font-size: 10;
+ 
+   
 }
- 
- 
-/* .mt-1 {
-   font-size: bold;
-   float:left;
-}
- 
-.mt-2 {
-   font-size: bold;
-   float: right;
-}
- 
-.mt-3 {
-   float: left;
-}
- 
-.mt-4 {
-   float: right;
-} */
  
  
 .mt-1 {
@@ -117,12 +105,4 @@ footer {
    color: #ffffff;
 }
  
- 
-.NEWNODE {
-   background-color: red;
- 
- 
-}
-.weField{
- 
-}
+

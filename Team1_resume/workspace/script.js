@@ -30,4 +30,11 @@ function addNewWeField(){
    
   }
    
+
+  function sound() {
+  var audio = new Audio("sounds/Claps.wav");
+  document.onclick = function() {
+    audio.play();
+  }
+}
   
