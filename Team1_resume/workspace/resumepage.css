@@ -1,105 +1,128 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
-
+@import url ('https://fonts.googleapis.com/css?family=Montserrat');
 * {
-    font-family: 'Montserrat';
+   font-family: 'Montserrat';
 }
-
-body,h1,h2 {
-    margin:0px;
-    padding:0px;
+ 
+.maintitle {
+  
+   font-size: 40px;
+   font-weight: bold;
+   text-align: center;
+   margin: 30px;
 }
-
-
-body {
-    min-width: fit-content;
-}
-
-h1 {
-    font-size:36px;
-    font-weight: bold;
-    font-style: italic;
-}
-
-
-h2 {
-    font-size:20px;
-    color:#282828;
-    font-weight: lighter;
-    margin-bottom: 16px;
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 5px;
-}
-
-.name-text {
-    font-size:16px;
-    color:#7c7c7c;
-    font-weight: bold;
-}
-
-.about-me-text {
-    font-size:10px;
-    line-height: 16px;
-}
-
+ 
 .mainbox {
-    width: 610px;
-    padding: 30px;
-    margin: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid #ebebeb;
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+   width: 800px;
+   padding: 30px;
+   margin: 30px;
+   margin-right: auto;
+   margin-left: auto;
+   border: 1px solid #ebebeb;
+   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+   font-size: 10;
 }
-
-.title-box {
-    text-align: right;
+ 
+ 
+/* .mt-1 {
+   font-size: bold;
+   float:left;
 }
-
-section {
-    margin-bottom:24px;
+ 
+.mt-2 {
+   font-size: bold;
+   float: right;
 }
-
+ 
+.mt-3 {
+   float: left;
+}
+ 
+.mt-4 {
+   float: right;
+} */
+ 
+ 
+.mt-1 {
+   float: left;
+}
+ 
+.mt-2 {
+   float: right;
+}
+ 
 .float-wrap {
-    overflow: hidden;
+   overflow: hidden;
 }
-
-.title-text {
-    font-size:11px;
-    font-weight: bold;
-    color: #282828;
-    float: left;
+ 
+ 
+/*
+.resume-img {
+  
+   width:200px;
+   height:200px;
+ 
+   padding: 50px;
+   border: 1px solid grey;
+   cursor:pointer;
+  
+} */
+ 
+.resume-pic-wrap{
+   text-align: center;
 }
-
-.year-text{
-    font-size:11px;
-    font-weight: bold;
-    color: #282828;
-    float: right;
+ 
+.input-info {
+   padding-bottom: 20px;
+ 
 }
-
-.desc-text {
-    font-size: 9px;
+ 
+.float-wrap {
+   overflow: hidden;
 }
-
-.desc-subtext {
-    font-size: 9px;
-    color:#282828;
-    padding-left:16px;
+ 
+.container  {
+   float: left;
+ 
 }
-
-.sns-img {
-    width:12px;
-    height:12px;
+ 
+ 
+ 
+#count {
+   float: right;
 }
-
-.sns-wrap {
-    text-align:right;
+ 
+#submit {
+   float: right;
+ }
+ 
+ 
+ 
+h2 {
+   font-size: 20px;
+   color:#282828;
+   font-weight: semi-bold;
+  
+   margin-top: 10px;
+   margin-bottom: 16px;
+ 
+   border-bottom: 1px solid #ebebeb;
+   padding-bottom: 10px;
 }
-
+ 
 footer {
-    text-align: center;
-    background-color: #1e1e1e;
-    padding: 20px;
-    font-size: 12px;
-    color: #919191;
+   text-align: center;
+   background-color: #919191;
+   padding: 25px;
+   font-size: 12px;
+   color: #ffffff;
+}
+ 
+ 
+.NEWNODE {
+   background-color: red;
+ 
+ 
+}
+.weField{
+ 
 }

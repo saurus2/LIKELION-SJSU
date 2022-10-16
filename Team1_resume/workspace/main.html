@@ -1,90 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main page</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link rel="main" href="resumepage.html">
+   <script src = "script.js"> </script>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>main page</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <link rel="stylesheet" href="main.css">
+   <link rel="main" href="resumepage.html">
+  
 </head>
 <body>
+ 
+ 
 <div class="mainbox">
+ 
+   <h1 class = "maintitle"> Resume Generator </h1>
+   <br>
+  
+     <!--
+       <div class="title-box">
+           <h2>Resume Options</h2>
+           <p>Please select Resume form </p>
+     </div>
+       <div class="resume-pic-wrap">
+           <img class="resume-img" src="images/form1.png" alt="option1" width="auto" height="auto" />
+           <img class="resume-img" src="images/form2.png" alt="option2">
+           <img class="resume-img" src="images/form3.png" alt="option3">
+       </div>
+     -->
+ 
+   <div class="input">
+<h2>Personal Information</h2>
+ 
+    <div class = float-wrap>
+       <p class="form-group mt-1">
+           <label for="nameField">Your Name</label>
+           <input type="text" id="nameField" placeholder= "Enter here" class="form-control"/>
 
-    <h1 class = "maintitle"> Resume Generator2 </h1>
-      <!-- hello world
-        <div class="title-box">
-            <h2>Resume Options</h2>
-            <p>Please select Resume form </p>
-      </div>
-        <div class="resume-pic-wrap">
-            <img class="resume-img" src="images/form1.png" alt="option1" width="auto" height="auto" />
-            <img class="resume-img" src="images/form2.png" alt="option2"> 
-            <img class="resume-img" src="images/form3.png" alt="option3"> 
-        </div>
-      -->
+       </p>
+     
+       <p class="form-group mt-2">
 
-    <div class="input">
-    <h2>Personal Information</h2>
-        <div class="form-group">
-            <label for="nameField">Your Name</label>
-            <input type="text" id="nameField" placeholder= "Enter here" class="form-control"/>
-        </div>
-        <div class="form-group">
-            <label for="contactField">Your Contact number </label>
-            <input type="text" id="contactField" placeholder= "Enter here" class="form-control"/>
-        </div>
-        <div class="form-group">
-            <label for="emailField">Your Contact email</label>
-            <input type="text" id="emailField" placeholder= "Enter here" class="form-control"/>
-        </div>   
-        <div class="form-group">
-            <label for="nameField">Your Job Title </label>
-            <input type="text" id="nameField" placeholder= "Enter here" class="form-control"/>
-        </div>
-        <div class="form-group mt-2">
-            <label for="aboutmeField">About me </label>
-            <textarea id="nameField" placeholder= "Enter here" class="form-control" rows = "3"></textarea>
-        </div>
-    </div>
-    
-     <h2>Personal Experience about your Career</h2>
-    <div class="form-group mt-2">
-        <label for="">Work Experience</label>
-        <textarea placeholder= "Enter here" class="form-control weField"></textarea>
-        
-        <div class="contatainer text-center-mt2" id="weAddButton">
-            <button onClick="addNewWeField()" class="btn btn-primary btn-sm" row="3">add</button>
-        </div>
+
+
+
+           <label for="emailField">Your Contact email</label>
+           <input type="text" id="emailField" placeholder= "Enter here" class="form-control"/>
+       </p>  
     </div>
  
-        <button id="submit">
-            <a type="button" href="/resumepage.html">Submit</a>
-        </button>
-    </div>
+   
+    <div class = float-wrap>
+       <div class="form-group mt-1">
+           <label for="nameField">Your Job Title </label>
+           <input type="text" id="nameField" placeholder= "Enter here" class="form-control"/>
+       </div>
+       <div class="form-group mt-2">
+           <label for="contactField">Your Contact number </label>
+
+           <input type="text" id="contactField" placeholder= "Enter here" class="form-control"/>
+       </div>
+   </div>
+ 
+
+       <div class="form-group mt-5">
+           <label for="aboutmeField">About me </label>
 
 
+          
+           <textarea id="nameField" placeholder= "Enter here" class="form-control" rows = "3"></textarea>
+         
+
+
+
+       </div>
+  
+   </div>
+<br> 
+  
+<h2 id="we11"> Personal Experience about your Career </h2>
+   <div class="form-group mt-6" id ="we22">
+       <label for="" id = "we33">Work Experience</label>
+       <textarea placeholder= "Enter here" class="form-control weField" rows = "4" id = "we44"></textarea>
+    
+   </div>
+ 
+   <!--new textarea button-->
+       <div class="container text-center mt-7" id="weAddButton">
+           <button onclick="addNewWeField()" class="btn btn-primary btn-sm" rows="4" id="we55">Add</button>
+ 
+       </div>
+       <br>
+  
+ 
+ 
+   <!-- Activities-->
+<br>
+<br>
+<h2>Activities</h2>
+   <div class="form-group mt-8">
+       <label for="Activities" id = "we77">Activities</label>
+       <textarea placeholder= "Enter here" class="form-control afield"></textarea>
+  
+   <br>
+     <!-- new acivities button -->
+       <div class="container text-center mt-8" id="afieldAddButton">
+           <button onclick="addNewAField()" class="btn btn-primary btn-sm" row="4" id="we66">Add</button>
+       </div>
+       <br>
+   </div>
+ 
+ 
+ 
+<!-- submit button -->
+<div>
+       <button id="submit">
+           <a type="button" href="resumepage.html" class="btn btn-primary btn-sm">Submit</a>
+       </button>
+   </div>
+ 
+ 
 </div>
-<script>
-    function addNewWeField(){
-    //console.log("Adding new field");
-    let newNode = document.createElement("textarea");
-    newNode.classList.add("form-control");
-    newNode.classList.add("weField");
-    newNode.classList.add("rows", 3);
-    
-    let weOb = document.getElementById("we");
-    let weAddButton = document.getElementById("weAddButton");
 
-    weOb.insertBefore(newNode, weAddButtonOb);
 
-}
-</script>
 
+
+ 
 <footer>
-    <p> Copyright CODE LION All rights reserved. </p>
+   <p> Copyright CODE LION All rights reserved. </p>
 </footer>
-    
+  
 </body>
 </html>
