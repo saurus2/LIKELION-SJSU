@@ -15,7 +15,7 @@
 
 <style>
     body{  
-        background-image: url("images/bg5.jpg");  
+        background-image: url("images/bg6.jpg");  
         background-repeat: no-repeat;
         background-size: cover;
        
@@ -24,7 +24,6 @@
 </style>
 
 <body>
-
 <div class="mainbox">
  
    <h1 class = "maintitle"> Resume Generator </h1>
@@ -45,34 +44,52 @@
 <div class="input">
         <h2>Personal Information</h2>
  
-    <div class = float-wrap>
+    <div class = "float-wrap">
+            <p class="form-group mt-1 " >
+                <label for="nameField" >Your Name</label>
+                <input type="text" id="nameField" placeholder= "Enter here" class="form-control"  />
+            </p>
+            
+            <p class="form-group mt-2">
+                <label for="contactField" >Your Contact number </label>
+                <input type="text" id="contactField" placeholder= "Enter here" class="form-control"/>
+            </p>
+            
+    </div>
+   
+    <div class = "float-wrap">
             <p class="form-group mt-1">
-                <label for="nameField">Your Name</label>
+                <label for="nameField" >Your Job Title </label>
                 <input type="text" id="nameField" placeholder= "Enter here" class="form-control"/>
             </p>
-
             <p class="form-group mt-2">
-                <label for="emailField">Your Contact email</label>
-                <input type="text" id="emailField" placeholder= "Enter here" class="form-control"/>
+                <label for="emailField"  >Your Contact email</label>
+                <input type="text" id="emailField" placeholder= "Enter here" class="form-control"  />
             </p>  
-    </div>
- 
-   
-    <div class = float-wrap>
-            <div class="form-group mt-1">
-                <label for="nameField">Your Job Title </label>
-                <input type="text" id="nameField" placeholder= "Enter here" class="form-control"/>
-            </div>
-            <div class="form-group mt-2">
-                <label for="contactField">Your Contact number </label>
-
-                <input type="text" id="contactField" placeholder= "Enter here" class="form-control"/>
-            </div>
+           
    </div>
- 
+
+   <!--social media link -->
+   <div class = "social">
+      <p class="form-group sm"></p>
+            <label for = "socialmedia"> Social Media link </label>
+         <div class = "sociallinks">
+                 Facebook:
+                <input type="text" id = "socialField" placeholder = "Enter the link" rows = "1" size = 50/> 
+                <br> Linkedin:
+                <input type="text" id = "socialField" placeholder = "Enter the link" rows = "1" size = 50/> 
+                <br> Github:
+                <input type="text" id = "socialField" placeholder = "Enter the link" rows = "1" size = 50/> 
+            </div>
+    </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
 
        <div class="form-group mt-5">
-           <label for="aboutmeField">About me </label>
+           <label for="aboutmeField" >About me </label>
            <textarea id="nameField" placeholder= "Enter here" class="form-control" rows = "3"></textarea>
         
        </div>
@@ -80,34 +97,30 @@
 </div>
 <br> 
   
-<h2 id="we11"> Personal Experience about your Career </h2>
-   <div class="form-group mt-6" id ="we22">
-       <label for="" id = "we33">Work Experience</label>
-       <textarea placeholder= "Enter here" class="form-control weField" rows = "4" id = "we44"></textarea>
-    
+<h2> Personal Experience about your Career </h2>
+   <div class="form-group mt-6" id ="we11">
+       <label for="" id = "w22">Work Experience</label>
+       <textarea placeholder= "Enter here" class="form-control weField" rows = "4" id = "we33"></textarea>
    </div>
  
    <!--new textarea button-->
        <div class="container text-center mt-7" id="weAddButton">
-           <button onclick="addNewWeField()" class="btn btn-primary btn-sm" rows="4" id="we55">Add</button>
- 
+           <button onclick="addNewWeField()" class="btn btn-primary btn-sm" rows="4" id="we44">Add</button>
        </div>
        <br>
   
- 
  
    <!-- Activities-->
 <br>
 <br>
 <h2>Activities</h2>
-   <div class="form-group mt-8">
-       <label for="Activities" id = "we77">Activities</label>
-       <textarea placeholder= "Enter here" class="form-control afield"></textarea>
-  
+   <div class="form-group mt-8" id = "we55">
+       <label for="Activities" id = "we66">Activities</label>
+       <textarea placeholder= "Enter here" class="form-control afield" id = "we77"></textarea>  
    <br>
      <!-- new acivities button -->
        <div class="container text-center mt-8" id="afieldAddButton">
-           <button onclick="addNewAField()" class="btn btn-primary btn-sm" row="4" id="we66">Add</button>
+           <button onclick="addNewAField()" class="btn btn-primary btn-sm" row="4" id="we88">Add</button>
        </div>
        <br>
    </div>
@@ -116,13 +129,12 @@
  
 <!-- submit button -->
 <div>
-       <button id="submit">
-           <a type="button" href="resumepage.html" class="btn btn-primary btn-sm" button onclick = "sound()">Submit</a>
-       </button>
-   </div>
- 
+    <p id = 'click'></p>
+       <button id="submit" onclick="generate()" class="btn btn-primary btn-sm">
+          Submit
+         </button>
+   </div> 
    <br>
- 
 </div>
 
 
