@@ -9,6 +9,7 @@ Project by Team 2:
 - Creating Tip Calculator using HTML, CSS, and JavaScript. 
 - It will display the total amount of the percentage for tip that user selects applied.
 - It has the ability to show the amount that users have to pay per person.
+- It has a function that randolmly choose one of the people to pay the bill.
 
 ## Project Goal
 Practicing HTML, CSS, and JavaScript that we learned from CODE LION.
