@@ -45,24 +45,27 @@
 
     <h3>Number of People</h3>
     <div class="bill">
-      <input type="number" id = "n_people" placeholder="#">
-      <output type="button" value="Calculate" onclick="c_n_p">
+      <input type="number" id = "n_people" placeholder="#" onclick="c_n_p()">
+      <input type="button" value="Calculate"  id = "p_total" onclick="c_n_p()">
     </div>
 
   </div>
 
 
   <div class="right">
-    <p>Total:$<output name="amount" for="hours rate vat">
+    <p>Total:
+      <output name="amount" for="hours rate vat">
         <div class="outer">
           <output type="text" , placeholder="$" , id='ta2' onclick="pr1()">
         </div>
       </output></p>
 
-    <p>Per Person:$
+    <p>Per Person:
+      <output name="amount"1 for="hours rate vat">
         <div class="outer">
-          <output name="amount" for="hours rate vat" id = "p_total">
-        </div></p>
+          <output type="text" , placeholder="$" id='ta3' >
+        </div>
+        </output></p>
   </div>
 
   <div class="random">

@@ -1,13 +1,12 @@
-
-
-
-var num_people = 0;
-
 var user_input_bill =  $('left').val();
 
 var after_tax = 0;
 
 var final = 0;
+
+var n_people = 0;
+
+var final_n_people = 0;
 
 function pr() {
   var user_input = document.getElementById('user_input').value;
@@ -40,7 +39,7 @@ function clickMe() {
 }
 
 function c_n_p() {
-  var people = document.getElementById('n_people').value;
-  var final_n_people = final / people;
-document.getElementById('p_total').innerHTML = final_n_people;
+  var num_people = document.getElementById('n_people').value;
+  final_n_people = final / num_people;
+  document.getElementById('ta3').innerHTML = final_n_people;
 }
