@@ -1,41 +1,35 @@
 //script
 var i = 0;
 function add() {
-    var input = document.getElementById('td1').value;
-    var inputdate = document.getElementById('date').value;
+    var input = document.getElementById('td1');
+    var inputdate = document.getElementById('date');
     
-    if (!input||!inputdate) {
+    if (!input.value || !inputdate.value) {
         alert('내용&날짜를 입력해 주세요')
     } else {
+        var box = document.createElement("DIV");
         var node = document.createElement("SPAN");
         var checkbox = document.createElement("INPUT");
         checkbox.setAttribute("type", "checkbox");
 
 
-        var textnode = document.createTextNode(input + ' - ' + document.getElementById('date').value);
-        node.id = 'node' + i;
-        checkbox.id = 'checkbox' + i;
+        var textnode = document.createTextNode(input.value + ' - ' + document.getElementById('date').value);
+        box.id = 'box' + i;
+        box.className = 'box';
         node.appendChild(textnode);
-        document.getElementById("list").appendChild(checkbox)
-        document.getElementById("list").appendChild(node)
-        document.getElementById('td1').value = ""; 
-        document.getElementById('date').value ="";
-        removeButton(i);
+        box.appendChild(checkbox);
+        box.appendChild(node);
+
+        input.value = "";
+        inputdate.value = "";
+
+        var remove_btn = document.createElement("Button");
+        remove_btn.innerHTML = " - ";
+        remove_btn.onclick = function() {box.remove()};
+        box.appendChild(remove_btn);
+
+        document.getElementById("list").appendChild(box);
+
         i++;
     }
-}
-
-function removeButton(n){
-    var remove_btn = document.createElement("Button");
-    remove_btn.innerHTML = "-";
-    remove_btn.id = 'del' + n;
-    remove_btn.className = "minus";
-    remove_btn.onclick = function() {remove(n)};
-    document.getElementById("list").appendChild(remove_btn);
-}
-
-function remove(n) {
-    document.getElementById('node'+n).style.display='none'; 
-    document.getElementById('del'+n).style.display='none';
-    document.getElementById('checkbox'+n).style.display='none';
 }

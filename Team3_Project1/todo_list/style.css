@@ -21,8 +21,11 @@ body {
     font-size: 20px;
 }
 
-span {
-    padding: 30px;
+.box {
+    margin: 40px;
     display: block;
 }
 
+.delete {
+    font-size: 30px;
+}
