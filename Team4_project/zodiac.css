@@ -1,0 +1,75 @@
+/* 
+id 접근 : #
+class 접근 : .
+*/
+
+/*font*/
+/* @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap'); */
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* font-family:'나눔고딕', 'NanumGothic', ng */
+
+body {
+    background: #ffdc17;
+    text-align: center;
+    font-family: 'GmarketSansBold', sans-serif; 
+    /* text-shadow: -5px 0px #3a4ca8, 0px 5px #3a4ca8, 5px 0px #3a4ca8, 0px -5px #3a4ca8; */
+}
+h1 {
+    color: #3a4ca8;
+    text-align: center;
+    font-size: 900%;
+    margin-top: 100px;
+    -webkit-text-stroke: 6px #3a4ca8;
+
+
+}
+#question {
+    color : #3a4ca8;
+    font-size: 300%;
+    
+}
+
+
+/* em {
+    color : white;
+    text-align: center;
+
+} */
+img{
+    width: 50%;
+    height: 50%;
+    object-fit: fill;
+}
+
+#Enter{
+    background-color: #3a4ca8;
+    font-size: 100%; 
+    padding: 10%, 10%, 10%, 10%;
+    border-radius: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    
+    
+    
+}
+
+
+.input_area {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+
+#input{
+    background: transparent;
+
+}

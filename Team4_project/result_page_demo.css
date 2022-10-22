@@ -1,0 +1,176 @@
+/*font*/
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #ffdc17;
+    /* text-align: center; */
+    font-family: 'GmarketSansBold', sans-serif; 
+    text-align: center;
+    margin:0;
+    /* padding: %; */
+}
+h1 {
+    color: #3a4ca8;
+    text-align: left;
+    font-size: 200%;
+    margin-top: 1%;
+    margin-left: 1%;
+    /* -webkit-text-stroke: 1px #3a4ca8; */
+
+
+}
+
+h2 {
+    color: #3a4ca8;
+    text-align: left;
+    font-size: 400%;
+    margin-top: -1%;
+    margin-left: 1%;
+    -webkit-text-stroke: 3px #3a4ca8;
+
+
+}
+
+h3{
+    font-size: 200%;
+    margin-bottom: -2%;
+}
+
+	
+.main_pic {
+    object-fit: scale-down;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    /* border: solid black;  */
+    /* margin-top: -5%; */
+    /* margin: auto; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* text-align: center; */
+    float: left;
+    
+
+    /*-------change color--------*/
+
+    /*default : black*/
+
+    /*change to red*/
+    /* filter: invert(39%) sepia(89%) saturate(1165%) hue-rotate(340deg) brightness(84%) contrast(105%); */
+
+    /*change to blue*/
+    /* filter: invert(21%) sepia(84%) saturate(1462%) hue-rotate(215deg) brightness(101%) contrast(86%); */
+    
+    /*change to silver*/
+    /* filter: invert(81%) sepia(0%) saturate(35%) hue-rotate(231deg) brightness(98%) contrast(90%); */
+
+    /*change to yellow*/
+    /* filter: invert(90%) sepia(54%) saturate(3176%) hue-rotate(335deg) brightness(98%) contrast(104%); */
+  }
+
+.parents{
+    margin-top: -7%;
+    color: #3a4ca8;
+    -webkit-text-stroke: 0.7px #3a4ca8;
+    position: relative;
+    overflow: hidden;
+    /* border: dotted */
+    object-fit: scale-down;
+    /* text-align: center; */
+
+
+
+}
+
+
+.color_explain{
+    width: 50%;
+    /* border: solid #3a4ca8; */
+    /* float: left; */
+    /* position: absolute; */
+    background-color: #ffdc17;
+    text-align: center;
+    margin: auto;
+
+
+
+}
+
+.zodiac_explain{
+    width: 50%;
+    /* border: solid; */
+    /* float: right; */
+    background-color: #ffdc17;
+    text-align: center;
+    margin: auto;
+
+
+}
+
+.bestie{
+    width: 50%;
+    /* border: solid; */
+    clear:both; /*위의 float에 영향 안받음*/
+    float: left; /*본인은 왼쪽정렬*/
+
+    object-fit: scale-down;
+    /* background-color: rgb(94, 115, 231); */
+    
+}
+
+.worst{
+    width: 50%;
+    /* border: solid; */
+    float: right;
+    /* clear:both; */
+    /* object-fit: fill; */
+    /* background-color: rgb(233, 76, 199); */
+
+    /* width: 20%; */
+    /* height: 20%; */
+    object-fit: scale-down;
+
+
+}
+
+
+.sub_img_bestie{
+    /*-------change color--------*/
+
+    /*default : black*/
+
+    /*change to red*/
+    /* filter: invert(39%) sepia(89%) saturate(1165%) hue-rotate(340deg) brightness(84%) contrast(105%); */
+
+    /*change to blue*/
+    /* filter: invert(21%) sepia(84%) saturate(1462%) hue-rotate(215deg) brightness(101%) contrast(86%); */
+    
+    /*change to silver*/
+    /* filter: invert(81%) sepia(0%) saturate(35%) hue-rotate(231deg) brightness(98%) contrast(90%); */
+
+    /*change to yellow*/
+    /* filter: invert(90%) sepia(54%) saturate(3176%) hue-rotate(335deg) brightness(98%) contrast(104%); */
+}
+
+.sub_img_worst{
+    /*-------change color--------*/
+
+    /*default : black*/
+
+    /*change to red*/
+    /* filter: invert(39%) sepia(89%) saturate(1165%) hue-rotate(340deg) brightness(84%) contrast(105%); */
+
+    /*change to blue*/
+    /* filter: invert(21%) sepia(84%) saturate(1462%) hue-rotate(215deg) brightness(101%) contrast(86%); */
+    
+    /*change to silver*/
+    /* filter: invert(81%) sepia(0%) saturate(35%) hue-rotate(231deg) brightness(98%) contrast(90%); */
+
+    /*change to yellow*/
+    filter: invert(90%) sepia(54%) saturate(3176%) hue-rotate(335deg) brightness(98%) contrast(104%);
+}
