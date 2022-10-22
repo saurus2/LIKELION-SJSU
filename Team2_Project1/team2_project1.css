@@ -35,9 +35,23 @@ input {
 .outer, outer > div {
   border: 2px;
   width: 100px;
+  color :#023047;
   background-color: white;
   height: 20px;
   display: inline-block;
+}
+
+form {
+  margin-top: 200px;
+  width: 50%
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .right {

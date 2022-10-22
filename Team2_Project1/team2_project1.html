@@ -3,6 +3,8 @@
 
 <head>
   <title>LION SPLITTER</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
   <script src="team2_project1.js"></script>
   <link rel="stylesheet" , href="team2_project1.css">
 
@@ -10,53 +12,57 @@
 </head>
 
 <body>
-  <div data-video="qWCLauk9oNo"
-        data-autoplay="0"
-        data-loop="1"
-        id="youtube-audio">
- </div>
- <script src="https://www.youtube.com/iframe_api"></script>
- <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+  <div data-video="qWCLauk9oNo" data-autoplay="0" data-loop="1" id="youtube-audio">
+  </div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
 
   <h1>SPLITTER</h1>
 
   <div class="left">
     <h3>Bill:</h3>
-    <input type="text" , placeholder="$">
+    <input type="number" , placeholder="$" , id="user_input">
     <h3>After Tax</h3>
 
+
+
     <div class="outer">
-      <div> total: here </div>
+      <output type="text" , placeholder="$" , id='at1'>
+        <input type="button" value="Calculate" onclick="pr()">
+
     </div>
 
     <h3>Select Tip%</h3>
 
-    <button class="button">15%</button>
-    <button class="button">18%</button>
+    <button class="button" type="submit" id='bt1' , onclick="pr1(0)">15%</button>
+
+    <button class="button" id='bt2' onclick="pr1(1)">18%</button>
     <br /><br />
-    <button class="button">20%</button>
-    <button class="button2">CUSTOM</button>
+    <button class="button" id='bt3' onclick="pr1(2)">20%</button>
+    <button class="button2" id='bt4' onclick="clickMe()">CUSTOM</button>
+    <input type="number" name="popup" id="popup" class="hide" placeholder="%" onclick="pr1(3)">
+    <input type="button" value="Calculate" onclick="pr1(3)">
 
     <h3>Number of People</h3>
     <div class="bill">
-      <input type="text" , placeholder="#">
+      <input type="number" id = "n_people" placeholder="#">
+      <output type="button" value="Calculate" onclick="c_n_p">
     </div>
 
   </div>
 
 
   <div class="right">
-        <p>Total:$<output name="amount" for="hours rate vat">
-            <div class="outer">
-              <div> 0 </div>
-            </div>
-          </output></p>
+    <p>Total:$<output name="amount" for="hours rate vat">
+        <div class="outer">
+          <output type="text" , placeholder="$" , id='ta2' onclick="pr1()">
+        </div>
+      </output></p>
 
-          <p>Per Person:$<output name="amount" for="hours rate vat">
-              <div class="outer">
-                <div> 0 </div>
-              </div>
-            </output></p>
+    <p>Per Person:$
+        <div class="outer">
+          <output name="amount" for="hours rate vat" id = "p_total">
+        </div></p>
   </div>
 
   <div class="random">
@@ -66,7 +72,7 @@
     <button class="button3">Click Me!</button>
   </div>
 
- <img src="1.png" width="300" height="300">
+  <img src="1.png" width="300" height="300">
 
 
 </body>
