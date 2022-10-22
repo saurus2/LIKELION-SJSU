@@ -54,16 +54,35 @@ h3{
     /* margin-right: auto; */
     /* text-align: center; */
     float: left;
+    
 
+    /*-------change color--------*/
+
+    /*default : black*/
+
+    /*change to red*/
+    /* filter: invert(39%) sepia(89%) saturate(1165%) hue-rotate(340deg) brightness(84%) contrast(105%); */
+
+    /*change to blue*/
+    /* filter: invert(21%) sepia(84%) saturate(1462%) hue-rotate(215deg) brightness(101%) contrast(86%); */
+    
+    /*change to silver*/
+    /* filter: invert(81%) sepia(0%) saturate(35%) hue-rotate(231deg) brightness(98%) contrast(90%); */
+
+    /*change to yellow*/
+    /* filter: invert(90%) sepia(54%) saturate(3176%) hue-rotate(335deg) brightness(98%) contrast(104%); */
   }
 
 .parents{
+    margin-top: -7%;
     color: #3a4ca8;
     -webkit-text-stroke: 0.7px #3a4ca8;
     position: relative;
     overflow: hidden;
     /* border: dotted */
     object-fit: scale-down;
+    /* text-align: center; */
+
 
 
 }
@@ -72,17 +91,25 @@ h3{
 .color_explain{
     width: 50%;
     /* border: solid #3a4ca8; */
-    float: left;
+    /* float: left; */
     /* position: absolute; */
-    /* background-color: greenyellow; */
+    background-color: #ffdc17;
+    text-align: center;
+    margin: auto;
+
+
 
 }
 
 .zodiac_explain{
     width: 50%;
     /* border: solid; */
-    float: right;
-    /* background-color: rgb(191, 102, 14); */
+    /* float: right; */
+    background-color: #ffdc17;
+    text-align: center;
+    margin: auto;
+
+
 }
 
 .bestie{
@@ -93,9 +120,7 @@ h3{
 
     object-fit: scale-down;
     /* background-color: rgb(94, 115, 231); */
-
-    /* width: 20%; */
-    /* height: 20%; */
+    
 }
 
 .worst{
@@ -111,4 +136,41 @@ h3{
     object-fit: scale-down;
 
 
+}
+
+
+.sub_img_bestie{
+    /*-------change color--------*/
+
+    /*default : black*/
+
+    /*change to red*/
+    /* filter: invert(39%) sepia(89%) saturate(1165%) hue-rotate(340deg) brightness(84%) contrast(105%); */
+
+    /*change to blue*/
+    /* filter: invert(21%) sepia(84%) saturate(1462%) hue-rotate(215deg) brightness(101%) contrast(86%); */
+    
+    /*change to silver*/
+    /* filter: invert(81%) sepia(0%) saturate(35%) hue-rotate(231deg) brightness(98%) contrast(90%); */
+
+    /*change to yellow*/
+    /* filter: invert(90%) sepia(54%) saturate(3176%) hue-rotate(335deg) brightness(98%) contrast(104%); */
+}
+
+.sub_img_worst{
+    /*-------change color--------*/
+
+    /*default : black*/
+
+    /*change to red*/
+    /* filter: invert(39%) sepia(89%) saturate(1165%) hue-rotate(340deg) brightness(84%) contrast(105%); */
+
+    /*change to blue*/
+    /* filter: invert(21%) sepia(84%) saturate(1462%) hue-rotate(215deg) brightness(101%) contrast(86%); */
+    
+    /*change to silver*/
+    /* filter: invert(81%) sepia(0%) saturate(35%) hue-rotate(231deg) brightness(98%) contrast(90%); */
+
+    /*change to yellow*/
+    filter: invert(90%) sepia(54%) saturate(3176%) hue-rotate(335deg) brightness(98%) contrast(104%);
 }
