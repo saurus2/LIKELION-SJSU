@@ -28,6 +28,10 @@ input {
   display: inline-block;
 }
 
+#youtube-audio {
+
+}
+
 .outer, outer > div {
   border: 2px;
   width: 100px;
