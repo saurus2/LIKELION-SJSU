@@ -30,8 +30,6 @@ function addNewWeField(){
      let we88 = document.getElementById("we77");
     // afieldAddButton.prepend(newNode);
      we55.insertBefore(newNode, we77);
-
-   
   }
    
   function sound() {
@@ -45,8 +43,57 @@ function addNewWeField(){
 //submit --> onsubmit --> submit.onsubmit(resume.page)
 
   function generate(){
-    document.getElementById('click').innerHTML
-     = document.getElementById('nameField').value ;
+    //nameT = input, setitem - main.html
+    //nameTT = getitem - resumepage.html
+    //name = var
+
+  //  console.log("insdie generate");
+    //let jobT = document.getElementById("jobT");
+
+  // Name 
+    let name = document.getElementById("nameT").value;
+    localStorage.setItem('nameTT', name);
+
+
+  // Jobtitle 
+    let job = document.getElementById("jobT").value;
+    localStorage.setItem('jobTT', job);
+
+  //Intro
+    let intro = document.getElementById("introT").value;
+    localStorage.setItem('introTT', intro);
+
+  //Experience 1
+    let exp = document.getElementById("expT").value;
+    localStorage.setItem('expTT', exp);
+
+  //Experience 2
+  //Activities 1
+  //Activities 2
+  //Education 1
+  //Education 2
+  //Awards
+
+
+
+
+    //locate it to resume after clicking "submit"
+    window.location.href = "./resumepage.html";
+
+    //console.log("test");
+
+    //  let jobT1 = document.getElementById("jobT").value;
+    //  jobT1.innerHTML = jobT;
+  
+    // let jobT1 = localStorage.getitem('jobT');
+    // document.getElementById('jobT').textContent = jobT1;
+  
+    //let nameField = document.getElementById("jobT").Value;
+    // let jobT = document.getElementById("jobT1");
+    
+    // document.getElementById("jobT1").innerHTML = jobT; 
+    // document.getElementById('click').innerHTML
+    // document.getElementById('nameField').value ;
   }
 
 

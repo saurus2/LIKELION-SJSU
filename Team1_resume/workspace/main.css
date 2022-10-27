@@ -11,6 +11,7 @@ p {
 
 .sociallinks {
     margin-left: 10px;
+    text-align:right;
 }
 
 .maintitle {
@@ -106,3 +107,4 @@ footer {
 body {
     background-color: #DBF9FC;
     }
+

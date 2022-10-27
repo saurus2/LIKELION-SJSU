@@ -7,54 +7,54 @@
 </head>
 <body>
   <div class="mainbox">
-    <div class="title-box">
-      <h1>Name</h1>
-      <p class="name-text">job title</p>
+    <div class="title-box"> 
+      <h1 id = "name_"> Name </h1> 
+      <p class="name-text" id = "job_"> Job Title </p>
     </div>
     <section>
       <h2>ABOUT ME</h2>
-      <p class="about-me-text">
-        introduce yourself
+      <p class="about-me-text" id = "intro_">
+        Introduce Yourself
      </p>
     </section>
     <section>
         <h2>EXPERIENCE</h2>
         <div class="float-wrap">
-          <p class="title-text">EXPERIENCE1</p>
-          <p class="year-text">start year - end year</p>
+          <p class="title-text" >EXPERIENCE 1 </p>
+          <p class="year-text" id = "year1_">Start Year - End Year</p>
         </div>
-        <p class="desc-text">job position</p>
-        <p class="desc-subtext">job description</p>
+        <p class="desc-text">Job Position</p>
+        <p class="desc-subtext">Job Description</p>
         <div class="float-wrap">
-            <p class="title-text">EXPERIENCE2</p>
-            <p class="year-text">start year - end year</p>
+            <p class="title-text">EXPERIENCE 2</p>
+            <p class="year-text" id = "year2_">Start Year - End Year</p>
           </div>
-          <p class="desc-text">job position</p>
-          <p class="desc-subtext">job description</p>
+          <p class="desc-text">Job Position</p>
+          <p class="desc-subtext">Job Description</p>
         <div class="float-wrap">
-            <p class="title-text">EXPERIENCE3</p>
-            <p class="year-text">start year - end year</p>
+            <p class="title-text">EXPERIENCE 3</p>
+            <p class="year-text">Start Year - End Year</p>
           </div>
-          <p class="desc-text">job position</p>
-          <p class="desc-subtext">job description</p>
+          <p class="desc-text">Job Position</p>
+          <p class="desc-subtext">Job Description</p>
       </section>
 
       <section>
         <h2>ACTIVITIES</h2>
         <div class="float-wrap">
-          <p class="title-text">ACTIVITIES1</p>
+          <p class="title-text">ACTIVITIES 1</p>
           <p class="year-text">start year - end year</p>
         </div>
         <p class="desc-text">description-text</p>
         <p class="desc-subtext">description-subtext</p>
         <div class="float-wrap">
-            <p class="title-text">ACTIVITIES2</p>
+            <p class="title-text">ACTIVITIES 2</p>
             <p class="year-text">start year - end year</p>
           </div>
           <p class="desc-text">description-text</p>
           <p class="desc-subtext">description-subtext</p>
         <div class="float-wrap">
-            <p class="title-text">ACTIVITIES3</p>
+            <p class="title-text">ACTIVITIES 3</p>
             <p class="year-text">start year - end year</p>
           </div>
           <p class="desc-text">description-text</p>
@@ -100,4 +100,36 @@
       <p>Copyright CODE LION All rights reserved. </p>
   </footer>
 </body>
+
+
+<script>
+  window.onload = function(){ 
+
+  //Name
+    document.getElementById('name_').innerHTML 
+    = localStorage.getItem('nameTT');
+ 
+  //jobtitle
+    document.getElementById('job_').innerHTML 
+    = localStorage.getItem('jobTT');
+
+  //intro
+    document.getElementById('intro_').innerHTML
+    = localStorage.getItem ('introTT');
+
+  //Experience 1 // doesn't work 10.25
+  document.getElementById('exp_').innerHTML
+    = localStorage.getItem ('expTT');
+
+   console.log ("never mind")
+
+
+
+  };
+  
+
+</script>
+
+
 </html>
+

@@ -10,7 +10,6 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
    <link rel="stylesheet" href="main.css">
    <link rel="main" href="resumepage.html">
-  
 </head>
 
 <style>
@@ -40,33 +39,31 @@
            <img class="resume-img" src="images/form3.png" alt="option3">
        </div>
      -->
- 
+
 <div class="input">
         <h2>Personal Information</h2>
- 
+
     <div class = "float-wrap">
             <p class="form-group mt-1 " >
                 <label for="nameField" >Your Name</label>
-                <input type="text" id="nameField" placeholder= "Enter here" class="form-control"  />
+                <input type="text" id="nameT" placeholder= "Enter here" class="form-control"  />
             </p>
-            
+        
             <p class="form-group mt-2">
                 <label for="contactField" >Your Contact number </label>
                 <input type="text" id="contactField" placeholder= "Enter here" class="form-control"/>
             </p>
-            
-    </div>
-   
+        </div>
+
     <div class = "float-wrap">
             <p class="form-group mt-1">
                 <label for="nameField" >Your Job Title </label>
-                <input type="text" id="nameField" placeholder= "Enter here" class="form-control"/>
+                <input type="text" id="jobT" placeholder= "Enter here" class="form-control"/>
             </p>
             <p class="form-group mt-2">
-                <label for="emailField"  >Your Contact email</label>
+                <label for="emailField"  >Your Contact Email</label>
                 <input type="text" id="emailField" placeholder= "Enter here" class="form-control"  />
             </p>  
-           
    </div>
 
    <!--social media link -->
@@ -87,10 +84,9 @@
             <br>
             <br>
 
-
        <div class="form-group mt-5">
            <label for="aboutmeField" >About me </label>
-           <textarea id="nameField" placeholder= "Enter here" class="form-control" rows = "3"></textarea>
+           <textarea id="introT" placeholder= "Enter here" class="form-control" rows = "3"></textarea>
         
        </div>
   
@@ -99,7 +95,7 @@
   
 <h2> Personal Experience about your Career </h2>
    <div class="form-group mt-6" id ="we11">
-       <label for="" id = "w22">Work Experience</label>
+       <label for="" id = "expT">Work Experience</label> <!--id : w22-->
        <textarea placeholder= "Enter here" class="form-control weField" rows = "4" id = "we33"></textarea>
    </div>
  
@@ -109,7 +105,6 @@
        </div>
        <br>
   
- 
    <!-- Activities-->
 <br>
 <br>
@@ -124,21 +119,34 @@
        </div>
        <br>
    </div>
- 
- 
- 
+
 <!-- submit button -->
-<div>
-    <p id = 'click'></p>
-       <button id="submit" onclick="generate()" class="btn btn-primary btn-sm">
-          Submit
-         </button>
-   </div> 
+    <div>
+        <p id = 'click'></p>
+      <!--  <a href = "resumepage.html" button id="submit" onclick="generate()" class="btn btn-primary btn-sm" input type = "submit">
+            Submit </button> </a> -->
+        <button onclick="generate()" class="btn btn-primary btn-sm" id = "submit">Submit</button>
+    </div> 
    <br>
 </div>
 
 
+</div>
+
  
+
+
+
+
+
+
+
+
+
+
+
+
+
 <footer>
    <p> Copyright CODE LION All rights reserved. </p>
 </footer>
