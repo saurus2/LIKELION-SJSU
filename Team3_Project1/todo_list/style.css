@@ -27,5 +27,14 @@ body {
 }
 
 .delete {
-    font-size: 30px;
+    background-color: #FF1644;
+    position: relative;
+    font-size: 16px;
+    margin-left: 14px;
+    bottom: 7px;
+}
+
+input.checkbox {
+    width: 25px;
+    height: 25px;
 }
