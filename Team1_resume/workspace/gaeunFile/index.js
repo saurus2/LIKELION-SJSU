@@ -28,6 +28,10 @@ personalButton.addEventListener("click", (e) => {
    //Convert back to JS object, reading from LocalStorage
     let totalUsers = JSON.parse(localStorage.getItem("USERS"));
 
+    if (totalUsers == null || totalUsers == undefined) {
+        totalUsers = [];
+    }  
+
     totalUsers.push(userInfo);
     /*localStorage stores key-value pairs. So to store a entire 
     javascript object we need to serialize it first (with JSON.stringify, for example*/

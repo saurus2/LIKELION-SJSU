@@ -5,9 +5,14 @@
 
 p {
     display : inline-block;
-   
     white-space: nowrap;
  }
+
+h1 {
+    font-size: 40px;
+    font-weight: bold; 
+    color: rgb(86, 84, 84); 
+}
 
 .sociallinks {
     margin-left: 10px;
