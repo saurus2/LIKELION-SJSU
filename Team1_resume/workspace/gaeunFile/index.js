@@ -12,15 +12,24 @@ personalButton.addEventListener("click", (e) => {
 
         contact: document.getElementById("contact-field").value,
         job: document.getElementById("job-field").value,
+        education: document.getElementById("education-field").value,
         email: document.getElementById("email-field").value,
         aboutme: document.getElementById("aboutme-field").value,
         //experience 
         exp1: document.getElementById("exp1-field").value,
         exp1_desc: document.getElementById("exp1-desc-field").value,
+        year1: document.getElementById("year1-field").value,
+
+        exp2: document.getElementById("exp2-field").value,
+        exp2_desc: document.getElementById("exp2-desc-field").value,
+        year2: document.getElementById("year2-field").value,
+
+        exp3: document.getElementById("exp3-field").value,
+        exp3_desc: document.getElementById("exp3-desc-field").value,
+        year3: document.getElementById("year3-field").value,
 
         //activities
-        act1: document.getElementById("act1-field").value,
-        act1_desc: document.getElementById("act1-desc-field").value,
+        skill: document.getElementById("skill-field").value,
 
         key: "KEY"
     }

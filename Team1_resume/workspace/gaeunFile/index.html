@@ -16,23 +16,39 @@
         <form id="personal-form" autocomplete="off">
             <div class="personal-info">
                 <h1 class = "maintitle"> Resume Generator </h1>
+                <h5>Personal Information</h5>
                 <input type="text" name="name" id="name-field" class="personal-form-field" placeholder="name"/>
-                <!--user upload image-->
-
                 <input type="text" name="contact "id="contact-field" class="personal-form-field" placeholder= "contact number"/>
                 <input type="text" name="job" id="job-field" class="personal-form-field" placeholder= "job title"/>
+                <input type="text" name="education" id="education-field" class="personal-form-field" placeholder="enter your recent education background"/>
+     
                 <input type="text" name="email" id="email-field" class="personal-form-field" placeholder="email address"/>    
                 <textarea name="aboutme" id="aboutme-field" class="personal-form-field" placeholder= "about me" rows = "3"></textarea>
             </div>
+                <h5>Professional Experience & Activities</h5>
             <div class="personal-experience">
-                <input type="text" name="experince1" id="exp1-field" class="personal-form-field" placeholder="experience title"/>
-                <textarea name="exp1-desc" id="exp1-desc-field" class="personal-form-field" placeholder= "describe yourexperience" rows = "3"></textarea>
+                <div class="experience1">
+                <input type="text" name="experince1" id="exp1-field" class="personal-form-field" placeholder="experiences or activities title"/>
+                <textarea name="exp1-desc" id="exp1-desc-field" class="personal-form-field" placeholder= "describe your experience" rows = "3"></textarea>
+                <input type="text" name="year1" id="year1-field" class="personal-form-field" placeholder="start-end year"/>
+              
+                <div class="experience2">
+                <input type="text" name="experince2" id="exp2-field" class="personal-form-field" placeholder="experiences or activity title"/>
+                <textarea name="exp2-desc" id="exp2-desc-field" class="personal-form-field" placeholder= "describe your experience" rows = "3"></textarea>
+                <input type="text" name="year2" id="year2-field" class="personal-form-field" placeholder="start-end year"/>
+
+                <div class="experience3">
+                <input type="text" name="experince3" id="exp3-field" class="personal-form-field" placeholder="experiences or activity title"/>
+                <textarea name="exp3-desc" id="exp3-desc-field" class="personal-form-field" placeholder= "describe your experience" rows = "3"></textarea>
+            <input type="text" name="year3" id="year3-field" class="personal-form-field" placeholder="start-end year"/>
             </div>
-            <div class="personal-activity">
-                <input type="text" name="activity1" id="act1-field" class="personal-form-field" placeholder="activity title"/>
-                <textarea name="act1-desc" id="act1-desc-field" class="personal-form-field" placeholder= "describe your activity" rows = "3"></textarea>
+                 
+            <div class="personal-skills">
+                    <h5>Professional Skills (languages)</h5>
+                   <textarea name="act1-desc" id="skill-field" class="personal-form-field" placeholder= "Enter your skills" rows = "3"></textarea>
             </div>
 
+            <!--
             <label for="option">Option of background: <Br>
                 <label for="type-option" id="option1">option 1
                     <input type="radio" name="option1" id="option1-field" class="background-option">
@@ -43,6 +59,8 @@
                 </label>
 
              </label>
+            -->
+  
             <br>
             <input type="submit" value="submit" id="personal-form-submit">
         

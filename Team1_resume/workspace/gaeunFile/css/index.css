@@ -27,12 +27,27 @@
     margin-top: 10px;
 }
 
-  .personal-experience{
-    align-self: flex-start;
-    display: grid;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
+
+.experience1{
+  align-self: flex-start;
+  display: grid;
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+.experience2{
+  align-self: flex-start;
+  display: grid;
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+.experience3{
+  align-self: flex-start;
+  display: grid;
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
 
 
  .personal-activity {
@@ -41,3 +56,22 @@
     padding-bottom: 10px;
     padding-top: 10px;
  }
+
+ .personal-skills{
+    align-self: flex-start;
+    display: grid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+ }
+
+ h5 {
+  font-size: 10px;
+  color:#4169e1;
+  font-weight: semi-bold;
+  
+  margin-top: 10px;
+  margin-bottom: 16px;
+
+  border-bottom: 1px solid #b0c4de;
+  padding-bottom: 10px;
+}
