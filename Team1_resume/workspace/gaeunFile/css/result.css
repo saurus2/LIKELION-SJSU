@@ -3,16 +3,16 @@
     font-family: 'Montserrat';
 }
 
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(67, 66, 66);
+}
+
 p {
     display : inline-block;
     white-space: nowrap;
  }
-
-h1 {
-    font-size: 40px;
-    font-weight: bold; 
-    color: rgb(86, 84, 84); 
-}
 
 .sociallinks {
     margin-left: 10px;
@@ -32,7 +32,7 @@ h1 {
     margin: 30px;
     margin-right: auto;
     margin-left: auto;
-    border: 1px solid #ebebeb;
+    border: 1px solid #a2a1a1;
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
     font-size: 10;
     color: black;
@@ -91,13 +91,14 @@ h1 {
 h2 {
     font-size: 20px;
     color:#282828;
-    font-weight: semi-bold;
+    font-weight: lighter;
     
     margin-top: 10px;
     margin-bottom: 16px;
 
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #d4d4d4;
     padding-bottom: 10px;
+
 }
 
 footer {
@@ -109,5 +110,14 @@ footer {
 }
 
 body {
-    background-color: #DBF9FC;
+    background-image: url("/Image/bg6.jpg"); 
+       background-repeat: no-repeat;
+       background-size: cover;
     }
+
+#contact-field {
+    background-image: url("/Image/phone.png");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 20px;
+}
