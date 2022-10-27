@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ 
+    <title>Resume page</title>
+</head>
+
+<body>
+    <div class="mainbox">
+        <form id="personal-form" autocomplete="off">
+            <div class="personal-info">
+                <h1 class = "maintitle"> Resume Generator </h1>
+                <input type="text" name="name" id="name-field" class="personal-form-field" placeholder="name"/>
+                <!--user upload image-->
+
+                <input type="text" name="contact "id="contact-field" class="personal-form-field" placeholder= "contact number"/>
+                <input type="text" name="job" id="job-field" class="personal-form-field" placeholder= "job title"/>
+                <input type="text" name="email" id="email-field" class="personal-form-field" placeholder="email address"/>    
+                <textarea name="aboutme" id="aboutme-field" class="personal-form-field" placeholder= "about me" rows = "3"></textarea>
+            </div>
+            <div class="personal-experience">
+                <input type="text" name="experince1" id="exp1-field" class="personal-form-field" placeholder="experience title"/>
+                <textarea name="exp1-desc" id="exp1-desc-field" class="personal-form-field" placeholder= "describe yourexperience" rows = "3"></textarea>
+            </div>
+            <div class="personal-activity">
+                <input type="text" name="activity1" id="act1-field" class="personal-form-field" placeholder="activity title"/>
+                <textarea name="act1-desc" id="act1-desc-field" class="personal-form-field" placeholder= "describe your activity" rows = "3"></textarea>
+            </div>
+
+            <label for="option">Option of background: <Br>
+                <label for="type-option" id="option1">option 1
+                    <input type="radio" name="option1" id="option1-field" class="background-option">
+                </label>
+
+                <label for="type-option" id="option2">option 2
+                    <input type="radio" name="option2" id="option2-field" class="background-option">
+                </label>
+
+             </label>
+            <br>
+            <input type="submit" value="submit" id="personal-form-submit">
+        
+        </form>
+    </div>
+</body>
+</html>
