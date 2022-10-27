@@ -1,6 +1,6 @@
+
 const personalForm = document.getElementById("personal-form");
 const personalButton = document.getElementById("personal-form-submit");
-
 
 personalButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -17,11 +17,10 @@ personalButton.addEventListener("click", (e) => {
         //experience 
         exp1: document.getElementById("exp1-field").value,
         exp1_desc: document.getElementById("exp1-desc-field").value,
-        
+
         //activities
         act1: document.getElementById("act1-field").value,
         act1_desc: document.getElementById("act1-desc-field").value,
-
 
         key: "KEY"
     }
