@@ -60,9 +60,6 @@ personalButton.addEventListener("click", (e) => {
         // console.log("222");
         window.location.href = "result2.html";
 
-    }else if(document.querySelector("input[type='radio'][name=option]:checked").value == 3){
-        // console.log("222");
-        window.location.href = "result3.html";
     }
     else{
 

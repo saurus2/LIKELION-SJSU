@@ -3,6 +3,10 @@
     font-family: 'Montserrat';
 }
 
+body {
+  background-color: blueviolet;
+}
+
 .mainbox {
     width: 800px;
     padding: 30px;
@@ -85,7 +89,5 @@ h1 {
   padding-bottom: 20px;
   font-weight: bold;
  
-
-
 }
  

@@ -32,7 +32,7 @@ h1 {
 .year-text {
    float: right; 
    font-weight: normal;
-   font-color: 
+   font-color: red;
 }
 
 .float-wrap {

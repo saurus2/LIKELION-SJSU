@@ -49,24 +49,7 @@ p {
     padding: 50px;
     border: 1px solid grey;
     cursor:pointer;
-    
-}
 
-.resume-pic-wrap{
-    text-align: center;
-}
-
-.input-info {
-    padding-bottom: 20px;
-
-}
-
-.float-wrap {
-    overflow: hidden;
-}
-
-.social {
-    float: left;
  }
  
 
@@ -104,17 +87,10 @@ h2 {
 
 
 body {
-    background-image: url("/Image/bg6.jpg"); 
+    background-image: url("/images/bg6.jpg"); 
        background-repeat: no-repeat;
        background-size: cover;
     }
-
-#contact-field {
-    background-image: url("/Image/phone.png");
-    background-repeat: no-repeat;
-    width: 10px;
-    height: 20px;
-}
 
 
 h6 {
