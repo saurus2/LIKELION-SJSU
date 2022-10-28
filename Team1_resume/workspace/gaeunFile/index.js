@@ -31,6 +31,8 @@ personalButton.addEventListener("click", (e) => {
         //activities
         skill: document.getElementById("skill-field").value,
 
+        //option : document.getElementById("option").value,
+
         key: "KEY"
     }
 
@@ -50,7 +52,23 @@ personalButton.addEventListener("click", (e) => {
 
     localStorage.setItem("CURRENTUSER", userInfo.key);
 
-    window.location.href = "result.html";
+ 
+    if(document.querySelector("input[type='radio'][name=option]:checked").value == 1){
+        //conole.log("111");
+        window.location.href = "result.html";
+    }else if(document.querySelector("input[type='radio'][name=option]:checked").value == 2){
+        // console.log("222");
+        window.location.href = "result2.html";
+
+    }else if(document.querySelector("input[type='radio'][name=option]:checked").value == 3){
+        // console.log("222");
+        window.location.href = "result3.html";
+    }
+    else{
+
+       alert("Please check the option");
+    }
+       // window.location.href = "result.html";
 })
 
 
