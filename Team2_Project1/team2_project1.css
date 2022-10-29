@@ -32,6 +32,10 @@ input {
   position: absolute;
 }
 
+::placeholder {
+  color: grey;
+}
+
 .outer, outer > div {
   border: 2px;
   width: 100px;
