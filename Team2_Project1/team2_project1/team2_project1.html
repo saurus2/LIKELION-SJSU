@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LION SPLITTER</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="team2_project1.js"></script>
+  <link rel="stylesheet" , href="team2_project1.css">
+
+</head>
+
+<body>
+  <div data-video="qWCLauk9oNo" data-autoplay="1" &loop="1" id="youtube-audio">
+  </div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+
+  <h1>SPLITTER</h1>
+
+  <div class="left">
+    <h3>Bill:</h3>
+    <input type="number" , placeholder="$" , id="user_input">
+    <h3>After Tax</h3>
+
+    <div class="outer">
+      <output type="text" , placeholder="$" , id='at1'>
+        <input type="button" value="Calculate" onclick="taxCalculate()">
+
+    </div>
+
+    <h3>Select Tip%</h3>
+
+    <button class="button" type="submit" id='bt1' , onclick="tipCalculate(0)">15%</button>
+
+    <button class="button" id='bt2' onclick="tipCalculate(1)">18%</button>
+    <br /><br />
+    <button class="button" id='bt3' onclick="tipCalculate(2)">20%</button>
+    <button class="button2" id='bt4' onclick="clickMe()">CUSTOM</button>
+    <input type="number" name="popup" id="popup" class="hide" placeholder="%" onclick="tipCalculate(3)">
+    <input type="button" value="Calculate" onclick="tipCalculate(3)">
+
+    <h3>Number of People</h3>
+    <div class="bill">
+      <input type="number" id="n_people" placeholder="#" onclick="perPersonCalculate()">
+      <input type="button" value="Calculate" id="p_total" onclick="perPersonCalculate()">
+    </div>
+
+  </div>
+
+
+  <div class="right">
+    <p>Total:
+      <output name="amount" for="hours rate vat">
+        <div class="outer">
+          <output type="text" , placeholder="$" , id='ta2' onclick="tipCalculate()">
+        </div>
+      </output>
+    </p>
+
+    <p>Per Person:
+      <output name="amount" 1 for="hours rate vat">
+        <div class="outer">
+          <output type="text" , placeholder="$" id='ta3'>
+        </div>
+      </output>
+    </p>
+  </div>
+
+  <div class="random">
+    <p> Who is paying Today?!</p>
+    <p>(Everyone, Pick a number</p>
+    <p>between 1 to # of people)</p>
+    <div class="outer">
+      <output type="text" id='result'></output>
+    </div>
+    <button class="button3" onclick="whoIsPaying()">Click Me!</button>
+  </div>
+
+  <img src="1.png" width="300" height="300">
+
+</body>
+
+<footer>
+  © Hanbee Cho, Dasom Lee, Hyungkyun Kim
+</footer>
+
+</html>
