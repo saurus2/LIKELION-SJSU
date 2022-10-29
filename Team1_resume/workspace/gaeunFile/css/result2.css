@@ -1,34 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo');
 * {
-    font-family: 'Lora', serif;
+    font-family: 'Heebo';
 }
 
 h1 {
     font-size: 60px;
     font-weight: bold;
-    color: rgb(67, 66, 66);
+    color: rgb(38, 37, 37);
     margin-top: 10px;
     text-align: center;
 }
 
 .personalinfo {
    
-    color: rgb(67, 66, 66);
+    color: rgb(107, 107, 107);
     font-size: 16px;
     text-align: center;
-    margin-top: -20px;
+    margin-top: -25px;
     margin-bottom: 40px;
+    padding-bottom: 50px;
+
+    border-bottom: 3px solid #d4d4d4;
+    
 }
+
 
 
 p {
     display : inline-block;
     white-space: nowrap;
  }
-
-.sociallinks {
-    margin-left: 10px;
-}
 
 .maintitle {
     
@@ -49,11 +50,6 @@ p {
     font-size: 10;
     color: black;
     background: rgba(255, 255, 255, 0.768);
-}
-
-
-.resume-pic-wrap{
-    text-align: center;
 }
 
 .input-info {
@@ -90,25 +86,22 @@ p {
 
 
 h2 {
-    font-size: 22px;
-    color:#1e1e1e;
+    font-size: 20px;
+    color:#eb5c5c;
     font-weight: bold;
     
     margin-top: 10px;
     margin-bottom: 16px;
     padding-bottom: 10px;
 
-    box-sizing: border-box;
-    background-color: #bde3f4;
-
-    padding: 5px 5px;
-
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
 }
 
 
 body {
-    background-color:#89CFF0;
+    background-color:#ffffff;
     }
 
 
@@ -127,12 +120,15 @@ h6 {
 
 .exp-text {
     float: left;
+    color: rgb(255, 115, 0);
+    font-weight: bold;
 }
 
 .year-text {
     float: right;
     margin-top: 10px;
     margin-bottom: auto;
+    color: #929292; 
 
 }
 
