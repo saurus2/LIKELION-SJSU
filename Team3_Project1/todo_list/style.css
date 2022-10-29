@@ -27,6 +27,7 @@ body {
 }
 
 .delete {
+    border-radius: 10px;
     background-color: #FF1644;
     position: relative;
     font-size: 16px;
@@ -37,4 +38,9 @@ body {
 input.checkbox {
     width: 25px;
     height: 25px;
+}
+
+.tab {
+    border: none;
+    background-color: #ABABAB;
 }
