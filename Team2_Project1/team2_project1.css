@@ -29,7 +29,7 @@ input {
 }
 
 #youtube-audio {
-
+  position: absolute;
 }
 
 .outer, outer > div {
