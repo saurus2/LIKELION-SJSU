@@ -25,9 +25,13 @@ h1 {
     font-weight: light;
     color: rgb(74, 74, 74);
 }
-
-.cate {
+/* 
+#cate {
 
     
 
-}s
+} */
+
+.menu{
+    text-align: center;
+}
