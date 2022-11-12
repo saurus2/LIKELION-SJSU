@@ -1,5 +1,5 @@
 # Team2 Project2
-Member: 이주원, 하민세, 김형균 
+Member: 이주원, 하민세, 김형균
 Project: 밸런스 게임 웹 프로젝트
 
 Project Description: 
