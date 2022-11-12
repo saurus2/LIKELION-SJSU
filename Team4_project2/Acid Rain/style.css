@@ -1,7 +1,8 @@
 body {
     background-image: url('sky.jpg');
     color: rgb(83, 83, 83);
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
 }
 
 #rain {
@@ -20,16 +21,40 @@ body {
     position: absolute;
     top: 65%;
     left: 42%;
+    visibility: visible;
+}
+
+#bt1 {
+    opacity: 0;
+    animation: fadeInText 3s 2s ease-out forwards;
+}
+
+#bt2 {
+    opacity: 0;
+    animation: fadeInText 4s 3s ease-out forwards;
+}
+
+#bt3 {
+    opacity: 0;
+    animation: fadeInText 5s 4s ease-out forwards;
+}
+
+
+@keyframes fadeInText {
+    100% {
+        opacity: 1;
+    }
 }
 
 #buttons button {
     font-size: 30px;
     font-weight: bold;
     border: none;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(83, 83, 83);
     margin-right: 30px;
 }
+
 
 #words-wrapper {
     color: rgb(83, 83, 83);
@@ -44,6 +69,7 @@ body {
     top: 40%;
     margin-left: -250px;
     margin-top: -250px;
+    visibility: visible;
 }
 
 .word {
@@ -52,8 +78,7 @@ body {
     transform-origin: 50% 50%;
     -webkit-transform: translateZ(1500px);
     transform: translateZ(1500px);
-    -webkit-transition: -webkit-transform 1.9s
-        cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    -webkit-transition: -webkit-transform 1.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
         opacity 2.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: transform 1.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
         opacity 2.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
