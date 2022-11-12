@@ -1,3 +1,4 @@
+//dasom
 let rain = document.getElementById('rain');
 const speed = 10;
 rain.style.top = '0px';
@@ -20,10 +21,10 @@ const words = document.querySelectorAll(".word");
 
 //Start the falling effect after 1.5 seconds
 setTimeout(() => {
-  //Add show class to each word
-  words.forEach((e) => {
-     e.classList.add("show");
-  });
+    //Add show class to each word
+    words.forEach((e) => {
+        e.classList.add("show");
+    });
 }, 1500);
 
 move();
