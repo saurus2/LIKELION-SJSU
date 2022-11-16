@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Single Day');
+
 * {
     font-family: 'Montserrat';
 }
 
 body {
-    background-color: rgb(232, 248, 250);
+    background-color: rgb(235, 248, 248);
+    background-image: url ("/Image/bg02-01.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: 10% 10%;
   }
 
 .mainbox {
@@ -21,17 +27,162 @@ body {
 }
 
 h1 {
-    font-size: 30px; 
-    font-weight: light;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    font-size: 60px; 
+    font-weight: bold;
+    text-align:center;
     color: rgb(74, 74, 74);
+    font-family: 'Single Day';
 }
-/* 
-#cate {
 
-    
+p{
+    font-size: 20px; 
 
-} */
+}
 
-.menu{
+.menu {
     text-align: center;
+    /* border : solid; */
+    font-family: 'Single Day';
+    font-size: 40px;
+
+}
+
+
+/* 음식 버튼 */
+.button-01 {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button-01:after {
+    content: "";
+    background-color: #fce66a;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-01:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  .button-01:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+
+  @media (min-width: 768px) {
+    .button-01 {
+      padding: 13px 50px 13px;
+    }
+}
+
+
+/* 연애 버튼 */
+
+.button-02 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button-02:after{
+    content: "";
+    background-color: #fba6f3;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-02:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  .button-02:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+
+  @media (min-width: 768px) {
+    .button-02 {
+      padding: 13px 50px 13px;
+    }
+}
+
+
+/* 드라마 버튼 */
+.button-03 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button-03:after {
+    content: "";
+    background-color: #95fad5;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-03:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  .button-03:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+
+  @media (min-width: 768px) {
+    .button-03 {
+      padding: 13px 50px 13px;
+    }
 }
