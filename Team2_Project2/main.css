@@ -186,3 +186,55 @@ p{
       padding: 13px 50px 13px;
     }
 }
+
+/* 음식 */
+.food{
+    margin: 5% 5% 5% 5%;
+    padding-bottom: 5%;
+    /* del later */
+    /* border : solid; */
+    text-align: center;
+    background-color: #fce66a;
+    display: none;
+}
+
+.VS{
+    background-color: transparent;
+    border: none;
+    cursor: not-allowed;
+}
+
+.A{
+    width : 30%;
+    background: url( "drone.png" );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 30%;
+    border: none;
+}
+.B{
+    width : 30%;
+    background: url( "bunker.png" );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 30%;
+    border: none;
+}
+
+.VS{
+    /* line-height: %; */
+    width : 20%;
+    /* height : 10%; */
+    /* background-size: cover; */
+    /* border:solid; */
+    /* padding-top: 20%; */
+    padding-bottom: 20%;
+    /* text-align: center; */
+    background: url( "vs.png" );
+    background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
+    border: none;
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
