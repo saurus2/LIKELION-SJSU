@@ -7,9 +7,10 @@
 let rain = document.getElementById('rain');
 const speed = 10;
 rain.style.top = '0px';
-const oneWord = ["function", "void", "array", "for", "while", "(for i = 0; i > n; i++)", "Hello World", "while(n > 0)", "java", "python", "gcc", "array", "number", "event", "date", "switch", "break"];
+
+const oneWord = ["function", "void", "array", "for", "while", "Hello World", "java", "python", "gcc", "array", "number", "event", "date", "switch", "break", "public static void main(String[] args)", "(for i = 0; i < n; i++)", "(for i = 0; i > n; i--)", "while(n != 0)", "function fall()"];
 const twoWords1 = ["int", "double", "float", "var", "const", "let", "String", "char", "Integer", "Double", "Object"];
-const twoWords2 = ["element", "n", "car", "value", "input", "output", "sample"];
+const twoWords2 = ["element", "n", "car", "value", "input", "output", "sample", "arr"];
 
 function fall() {
     rain.style.top = (parseInt(rain.style.top) + speed) + 'px';
