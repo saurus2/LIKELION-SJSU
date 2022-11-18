@@ -5,15 +5,11 @@ body {
     overflow: hidden;
 }
 
-#rain {
+.rain {
+    left: 10px;
     position: absolute;
     height: 100px;
     top: 10px;
-}
-
-.rain {
-    position: absolute;
-    height: 100px;
     width: 50%;
 }
 
