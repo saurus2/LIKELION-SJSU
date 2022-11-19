@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 
-h1{
-    font-size:  80px;
-    text-shadow: 5px 5px #023047;
-    text-align: center;
-    color :#219EBC;
+h1 {
+  font-size: 80px;
+  text-shadow: 5px 5px #023047;
+  text-align: center;
+  color: #219EBC;
 }
 
-body{
-    text-align: center;
-    font-family: 'Silkscreen', cursive;
-    background:url(
-data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAAXNSR0IArs4c6QAAADtJREFUKFNjZCACMBJSw2Tg/h+vIpCCfxd2MhI0CWQTVkUwE2BOwVCErgCnSeiegZuEzQQU6/ApACkEAO5RFYLEx1njAAAAAElFTkSuQmCC
+body {
+  text-align: center;
+  font-family: 'Silkscreen', cursive;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAAXNSR0IArs4c6QAAADtJREFUKFNjZCACMBJSw2Tg/h+vIpCCfxd2MhI0CWQTVkUwE2BOwVCErgCnSeiegZuEzQQU6/ApACkEAO5RFYLEx1njAAAAAElFTkSuQmCC
 ) repeat;
- background-color:  #FFBB50;
+  background-color: #FFBB50;
 }
 
 input {
   font-family: 'Silkscreen', cursive;
   font-size: 12px;
   background-color: white;
-  color :#023047;
+  color: #023047;
   border: none;
   padding: 15px 15px;
   text-align: left;
@@ -36,10 +35,11 @@ input {
   color: grey;
 }
 
-.outer, outer > div {
+.outer,
+outer>div {
   border: 2px;
   width: 100px;
-  color :#023047;
+  color: #023047;
   background-color: white;
   height: 20px;
   display: inline-block;
@@ -71,17 +71,17 @@ form {
   position: fixed;
 }
 
-.left{
-float: left;
-padding-left: 100px;
-padding-right: 100px;
-padding-bottom: 50px;
-margin-left: 70px;
-text-align: left;
-color: white;
-background-color: #023047;
-box-shadow: 10px 10px #219EBC;
-position: fixed;
+.left {
+  float: left;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  margin-left: 70px;
+  text-align: left;
+  color: white;
+  background-color: #023047;
+  box-shadow: 10px 10px #219EBC;
+  position: fixed;
 }
 
 .random {
@@ -102,7 +102,7 @@ position: fixed;
   font-family: 'Silkscreen', cursive;
   font-size: 16px;
   background-size: 5px;
-  color :#219EBC;
+  color: #219EBC;
   box-shadow: 5px 5px #023047;
   border: none;
 }
@@ -117,7 +117,7 @@ position: fixed;
   font-size: 16px;
   background-color: #219EBC;
   background-size: 5px;
-  color :#white;
+  color: white;
   border: none;
   padding: 15px 50px;
   box-shadow: 5px 5px #023047;
@@ -130,7 +130,7 @@ position: fixed;
   font-size: 16px;
   background-color: white;
   background-size: 5px;
-  color :#023047;
+  color: #023047;
   border: none;
   padding: 15px 31px;
   box-shadow: 5px 5px #219EBC;
@@ -139,8 +139,8 @@ position: fixed;
 }
 
 .button:active {
-    vertical-align: top;
-    padding-top: 8px;
+  vertical-align: top;
+  padding-top: 8px;
 }
 
 .button2:active {
@@ -156,10 +156,10 @@ img {
 }
 
 footer {
-    text-align: center;
-    font-family: 'Silkscreen', cursive;
-    font-size: 14px;
-    color: #219EBC;
-    margin-top: 800px;
-    margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Silkscreen', cursive;
+  font-size: 14px;
+  color: #219EBC;
+  margin-top: 800px;
+  margin-bottom: 20px;
 }
