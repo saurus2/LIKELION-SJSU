@@ -53,6 +53,7 @@ p{
 }
 
 
+
 /* 음식 버튼 */
 .button-01 {
     margin-top: 50px;
@@ -222,6 +223,7 @@ p{
     background-repeat: no-repeat;
     padding-bottom: 30%;
     border: none;
+    
 }
 .B{
     width : 30%;
