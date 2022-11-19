@@ -8,7 +8,6 @@
   <script src="team2_project1.js"></script>
   <link rel="stylesheet" , href="team2_project1.css">
 
-
 </head>
 
 <body>
@@ -24,29 +23,27 @@
     <input type="number" , placeholder="$" , id="user_input">
     <h3>After Tax</h3>
 
-
-
     <div class="outer">
       <output type="text" , placeholder="$" , id='at1'>
-        <input type="button" value="Calculate" onclick="pr()">
+        <input type="button" value="Calculate" onclick="taxCalculate()">
 
     </div>
 
     <h3>Select Tip%</h3>
 
-    <button class="button" type="submit" id='bt1' , onclick="pr1(0)">15%</button>
+    <button class="button" type="submit" id='bt1' , onclick="tipCalculate(0)">15%</button>
 
-    <button class="button" id='bt2' onclick="pr1(1)">18%</button>
+    <button class="button" id='bt2' onclick="tipCalculate(1)">18%</button>
     <br /><br />
-    <button class="button" id='bt3' onclick="pr1(2)">20%</button>
+    <button class="button" id='bt3' onclick="tipCalculate(2)">20%</button>
     <button class="button2" id='bt4' onclick="clickMe()">CUSTOM</button>
-    <input type="number" name="popup" id="popup" class="hide" placeholder="%" onclick="pr1(3)">
-    <input type="button" value="Calculate" onclick="pr1(3)">
+    <input type="number" name="popup" id="popup" class="hide" placeholder="%" onclick="tipCalculate(3)">
+    <input type="button" value="Calculate" onclick="tipCalculate(3)">
 
     <h3>Number of People</h3>
     <div class="bill">
-      <input type="number" id = "n_people" placeholder="#" onclick="c_n_p()">
-      <input type="button" value="Calculate"  id = "p_total" onclick="c_n_p()">
+      <input type="number" id="n_people" placeholder="#" onclick="perPersonCalculate()">
+      <input type="button" value="Calculate" id="p_total" onclick="perPersonCalculate()">
     </div>
 
   </div>
@@ -56,27 +53,31 @@
     <p>Total:
       <output name="amount" for="hours rate vat">
         <div class="outer">
-          <output type="text" , placeholder="$" , id='ta2' onclick="pr1()">
+          <output type="text" , placeholder="$" , id='ta2' onclick="tipCalculate()">
         </div>
-      </output></p>
+      </output>
+    </p>
 
     <p>Per Person:
-      <output name="amount"1 for="hours rate vat">
+      <output name="amount" 1 for="hours rate vat">
         <div class="outer">
-          <output type="text" , placeholder="$" id='ta3' >
+          <output type="text" , placeholder="$" id='ta3'>
         </div>
-        </output></p>
+      </output>
+    </p>
   </div>
 
   <div class="random">
-    <p>
-      Pick Who Will Pay Today!!
-    </p>
-    <button class="button3">Click Me!</button>
+    <p> Who is paying Today?!</p>
+    <p>(Everyone, Pick a number</p>
+    <p>between 1 to # of people)</p>
+    <div class="outer">
+      <output type="text" id='result'></output>
+    </div>
+    <button class="button3" onclick="whoIsPaying()">Click Me!</button>
   </div>
 
   <img src="1.png" width="300" height="300">
-
 
 </body>
 
