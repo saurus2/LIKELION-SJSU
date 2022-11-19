@@ -6,18 +6,39 @@ body {
 }
 
 .rain {
+    font-size: 25px;
     left: 10px;
     position: absolute;
     height: 100px;
     top: 10px;
     width: 50%;
+    display: block;
+}
+
+#input {
+    display: none;
+    position: absolute;
+    top: 860px;
+    width: 300px;
+    height: 40px;
+    left: 835px;
+    font-size: 17px;
+}
+
+#line {
+    background-color: rgb(153, 32, 32);
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 2px;
+    top: 820px;
 }
 
 #buttons {
     position: absolute;
     top: 65%;
     left: 42%;
-    visibility: visible;
+    display: block;
 }
 
 #bt1 {
@@ -65,7 +86,7 @@ body {
     top: 40%;
     margin-left: -250px;
     margin-top: -250px;
-    visibility: visible;
+    display: block;
 }
 
 .word {
