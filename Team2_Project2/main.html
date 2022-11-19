@@ -9,7 +9,9 @@
     <title> 밸런스 게임 </title>
   </head>
   <body>
+    <button class = 'home'>Home</button>
     <h1> Welcome to Balance Game </h1>
+
     
         <!-- <div class = "menu">
             <input type="음식 밸런스" value="음식" id="cate" class="btn btn-info"> <br> <br>
@@ -22,11 +24,11 @@
           <p style="text-align:center">  Choose your category </p>
           
           <button id = 'food_btn' class="button-01" role="button"> 음식 밸런스 </button> <br> <br>
-          <button class="button-02" role="button"> 연애 밸런스 </button> <br> <br>
-          <button class="button-03" role="button"> 드라마 밸런스 </button>
+          <button id = 'date_btn' class="button-02" role="button"> 연애 밸런스 </button> <br> <br>
+          <button id = 'drama_btn' class="button-03" role="button"> 드라마 밸런스 </button>
         </div>
 
-        <section class = 'food'>
+        <section class = 'sub food'>
           <h2>음식 밸런스 1.</h2>
           <div class = 'select'>
             <button class = 'A'> 짜장면</button>
@@ -35,15 +37,29 @@
           </div>
         </section>
 
-      <script>
-        // when click food btn
-        $('#food_btn').click(function(){
-          $('.menu').css('display', 'none');
-          $('.food').css('display', 'block');
-      });
-      </script>
+        <section class = 'sub date'>
+          <h2>연애 밸런스 1.</h2>
+          <div class = 'select'>
+            <button class = 'A'> X의 친구와 사귀기</button>
+            <button class = 'VS'></button>
+            <button class = 'B'> 친구의 X와 사귀기</button>
+          </div>
+        </section>
+
+        <section class = 'sub drama'>
+          <h2>영화/드라마 밸런스 1.</h2>
+          <p class = 'desc_drama'>
+            설명설명
+          </p>
+          <div class = 'select'>
+            <button class = 'A'> 블라블라</button>
+            <button class = 'VS'></button>
+            <button class = 'B'> 블라블라</button>
+          </div>
+        </section>
 
 
+      <script src = 'main.js'></script>
   </body>
 </html>
 

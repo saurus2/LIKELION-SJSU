@@ -8,7 +8,9 @@
 body {
     background-color: rgb(235, 248, 248);
     background-image: url ("/Image/bg02-01.jpg");
-    
+    text-align: left;
+    padding-left: 2%;
+    padding-top: 2%;
     background-repeat: no-repeat;
     background-size: 10% 10%;
   }
@@ -187,21 +189,30 @@ p{
     }
 }
 
-/* 음식 */
-.food{
+.sub{
+  display: none;
+}
+
+/* sub 창 */
+.sub{
     margin: 5% 5% 5% 5%;
     padding-bottom: 5%;
     /* del later */
     /* border : solid; */
     text-align: center;
     background-color: #fce66a;
-    display: none;
 }
 
 .VS{
     background-color: transparent;
     border: none;
     cursor: not-allowed;
+}
+
+.desc_drama{
+  background-color: #51e611;
+  margin: 5% 5% 5% 5%;
+
 }
 
 .A{
