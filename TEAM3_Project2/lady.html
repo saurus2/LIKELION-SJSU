@@ -12,6 +12,114 @@
 
 <br />
 
+<h4 id = "question">질문</h4>
+<div class="myButton">
+  <button id="Choice" type="button" class="btn btn-primary">선택지1</button>
+  <br />
+  <button id="Choice" type="button" class="btn btn-primary">선택지2</button>
+</div>
+
+<!-- for jquery -->
+<script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+</script>
+
+<script>
+  enter.addEventListener("click", function(){
+    check();
+    openCompiler();
+    }
+  );
+
+  // 버튼 누르면 새 페이지
+  function openCompiler() {
+      window.open("lady2.html", "_self");
+  }
+
+  function check(){
+    // 버튼 인풋을 변수로 저장
+    var enter = document.getElementById("Choice");
+
+    const questionList=[
+      "나무꾼이 일을 하러 갈까요?",
+      "나무꾼이 먹을 밥이 없어요ㅠㅠ",
+      "나무꾼이 다친 사슴을 만났어요! <br> 어떻게 치료해줄까요?",
+      "사슴이 고맙다고 선녀에 대한 정보를 알려줬어요!<br>사슴이 말해준 장소에 갈까요?"
+    ];
+    const ch1List=[
+      "일 하러 가기",
+      "산에 있는 약초로 치료해주기",
+      "갑니다"
+    ];
+    const ch2List=[
+      "일 하지 않기",
+      "집에서 붕대 가져오기",
+      "가지 않습니다"
+    ];
+    // 엔딩 내용 const ending=[선녀와 해피 엔딩, 나무꾼 일상 엔딩];
+
+
+    var question = questionList[0];
+    var ch = ch1List[0];
+    const resultArray = [question, ch];
+    console.log(resultArray);
+    sessionStorage.setItem("resultArray", JSON.stringify(resultArray));
+
+  }
+
+  /*질문*/
+  document.getElementById('qeustion').innerHTML = resultArray[0];
+  /*선택지1*/
+  document.getElementById('선택지1').innerHTML = resultArray[1];
+  /*선택지2*/
+  document.getElementById('선택지2').innerHTML = resultArray[2];
+
+  const resultArray = [question, ch];
+  console.log(resultArray);
+  sessionStorage.setItem("resultArray", JSON.stringify(resultArray));
+
+</script>
+
+
+<!-- 내용 -->
+<!-- 
+def woodman(){
+    # 7개의 HTML 필요
+
+    # 선택지에 따라서 결과값 다르게
+    print(f"선녀와 나무꾼");
+    print(f"<br>");
+
+    option=0;
+
+    # 1. 선택지 HTML
+    print(f"나무꾼이 일을 하러 갈까요?");
+    # there are two buttons on the screen
+    if (option=="GO"): 
+        # 2. 사슴 만나는 HTML
+        # go to meet deer page / Html 만들기
+
+        # 3. 나무꾼 밥 부실해지는 HTML
+    else : # 나무꾼의 밥이 부실해지는 html
+
+    # 2. 사슴 만나는 HTML
+    print(f"나무꾼이 다친 사슴을 만났어요!\n");
+    print(f"어떻게 치료해 줄까요?");  # html에서 글자 크기 다르게 하기
+    # 뭐를 선택하든 같은 html로 가기
+    # 4. 사슴이 선녀 정보 알려주는 HTML로 가기
+
+    # 5. 사슴이 말해준 장소 선택지 HTML
+    print(f"사슴이 말해준 장소에 갈까요?\n");
+    if (option="GO"):
+        # 6. 해피엔딩 HTML
+        # 선녀랑 해피엔딩 html 페이지
+        # 7. 일상 엔딩 HTML
+    else : # 나무꾼 일상 엔딩
+}
+ -->
+
 <footer>
     © Hanbee Cho, Hyeyeon Im, Taehun Lee
   </footer>
