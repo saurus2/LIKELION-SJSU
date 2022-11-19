@@ -61,7 +61,23 @@ body {
 }
 
 /* 한비님 디자인 확인 부탁 드려요! */
-#Choice{
+.Choice1{
+  border: 15px #005F73;
+  border-radius: 8px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 50px;
+  color: #E9D8A6;
+  font-family: 'Jua', sans-serif;
+  background-color: #005F73;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Choice2{
   border: 15px #005F73;
   border-radius: 8px;
   padding-left: 60px;

@@ -12,11 +12,11 @@
 
 <br />
 
-<h4 id = "question">질문</h4>
+<h4 id = "question">나무꾼이 일을 하러 갈까요?</h4>
 <div class="myButton">
-  <button id="choice1" type="button" class="btn btn-primary">선택지1</button>
-  <br />
-  <button id="choice2" type="button" class="btn btn-primary">선택지2</button>
+  <button value="Choice1" onClick="check(this);">일 하러 가기</button>
+  <br/>
+  <button value="Choice2" onClick="check(this);">일 하지 않기</button>
 </div>
 
 <!-- for jquery -->
@@ -32,17 +32,15 @@
 // the javascript array resultArray is now in Page 2 as const [question,ch1,ch2];
 const resultArray = JSON.parse(sessionStorage.getItem("resultArray"));
 
-function moveTochoice() {
- 
-    switch (question){
+switch (question){
         case questionList[0]:
-            if (ch==ch1List[0]){
+            if (Choice1==ch1){
 
             }
             // 상황에 맞게 수정
-            resultArray[0]=questionList[1];
-            resultArray[1]=ch1List[2];
-            resultArray[2]=ch2List[3];
+            question=questionList[1];
+            ch1=ch1List[2];
+            ch2=ch2List[3];
             break;
         case questionList[1]:arguments
 
@@ -51,7 +49,12 @@ function moveTochoice() {
         case questionList[3]:
     }
 
- const resultArray = [question, ch];
+function moveTochoice() {
+ 
+  // 변수
+
+
+ const resultArray = [question, ch1, ch2];
  console.log(resultArray);
  sessionStorage.setItem("resultArray", JSON.stringify(resultArray));
  
