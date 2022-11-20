@@ -8,10 +8,20 @@ var pH = 7.0;
 const speed = 10;
 var makeTime = 0;
 var fallTime = 0;
+var score = 0;
+var input = document.getElementById('input');
 
-const oneWord = ["function", "void", "array", "for", "while", "Hello World", "java", "python", "gcc", "array", "number", "event", "date", "switch", "break", "public static void main(String[] args)", "(for i = 0; i < n; i++)", "(for i = 0; i > n; i--)", "while(n != 0)", "function fall()"];
+const oneWord = ["function", "void", "array", "for", "while", "Hello World", "java", "python", "gcc", "array", "number", "event", "date", "switch", "break", "public static void main(String[] args)", "for (i = 0; i < n; i++)", "for (i = 0; i > n; i--)", "while(n != 0)", "function fall()"];
 const twoWords1 = ["int", "double", "float", "var", "const", "let", "String", "char", "Integer", "Double", "Object"];
 const twoWords2 = ["element", "n", "car", "value", "input", "output", "sample", "arr"];
+
+input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        removeElement(input.value);
+        input.value = "";
+    }
+})
 
 function fall() {
     var rainClass = document.getElementsByClassName("rain");
@@ -62,6 +72,21 @@ function wordMaker() {
     make();
 }
 
+function removeElement(str) {
+    var rainClass = document.getElementsByClassName("rain");
+
+    for (var i = 0; i < rainClass.length; i++) {
+        if (rainClass[i].innerHTML == str) {
+            rainClass[i].remove();
+            if (str.length > 12)
+                score += 50
+            score += 100
+            document.getElementById("score").innerHTML = "Score: " + score;
+            break;
+        }
+    }
+}
+
 //All words node
 const words = document.querySelectorAll(".word");
 
@@ -76,20 +101,22 @@ setTimeout(() => {
 //When user select the level of the game, the words starts falling
 function start(n) {
     if (n == 0) {
+        makeTime = 4000;
+        fallTime = 250;
+    } else if (n == 1) {
         makeTime = 3000;
         fallTime = 200;
-    } else if (n == 1) {
+    } else {
         makeTime = 2000;
         fallTime = 150;
-    } else {
-        makeTime = 1000;
-        fallTime = 100;
     }
 
     //유저가 레벨 선택하면 없어지게 함
     document.getElementById("words-wrapper").style.display = "none";
     document.getElementById("buttons").style.display = "none";
     //유저가 레벨 선택하면 보이게 함
+    document.getElementById("score").style.display = "block";
+    document.getElementById("score").innerHTML = "Score: " + score;
     document.getElementById("input").style.display = "block";
     document.getElementById("line").style.display = "block";
 
