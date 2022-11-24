@@ -3,14 +3,95 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>옛날 옛적에...</title>
+  <meta http-equiv="X-UA-Compatible" content = "IE=edge">
   <link rel="stylesheet" , href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>옛날 옛적에...</title>
 </head>
 
 <body>
-<h4>흥부와 놀부</h4>
+<h3>흥부와 놀부</h3>
 
-<br />
+<br/>
+
+<div class = "choice1">
+  <h4 id = "question">옛날에 욕심쟁이 형 놀부와 착한 동생 흥부가 살았어요.<br>부모님이 돌아가셔서 재산을 나누어야 해요<br>흥부가 재산을 형인 놀부에게 양보할까요?</h4></h4>
+  <div class = 'select'>
+  <button id = 'yes' role="button">양보 해요</button> <br> <br>
+  <button id = 'no' role="button">양보 안 해요</button> <br> <br>
+</div>
+</div>
+
+<div class = "again">
+  <h4 id = "question">나무꾼의 밥이 부실해졌어요...</h4>
+  <div class = 'select'>
+  <button id = 'work' role="button"> 일을 하러 가요 </button> <br> <br>
+  <button id = 'not_work' role="button"> 일 하러 가지 않아요 </button> <br> <br>
+  </div>
+
+<div class = "choice2">
+  <h4 id = "question">나무꾼이 다친 사슴을 만났어요!<br>어떻게 치료해줄까요?</h4>
+  <div class = 'select'>
+    <button id = 'mountain'> 산에 있는 약초로 치료해주기</button>
+    <button id = 'home'> 집에서 붕대 가져오기</button>
+</div>
+</div>
+
+<div class = "choice3">
+  <h4 id = "question">사슴이 고맙다고 선녀에 대한 정보를 알려줬어요!<br>사슴이 말해준 장소에 갈까요?</h4>
+  <div class = 'select'>
+    <button id = 'go'>갑니다</button>
+    <button id = 'not_go'>가지 않습니다</button>
+</div>
+</div>
+       
+<div class = "ending1">
+  <h4 id = "question">사슴이 알려준 장소에는 선녀가 있었어요!<br>둘은 첫눈에 사랑에 빠졌고, 오래오래 행복하게 살았답니다</h4>
+</div>
+
+<div class = "ending2">
+  <h4 id = "question">나무꾼은 홀로 행복하게 살았답니다</h4>
+</div> 
+
+<script>
+  $('.choice2').css('display', 'none');
+  $('.again').css('display', 'none');
+  $('.choice3').css('display', 'none');
+  $('.ending1').css('display', 'none');
+  $('.ending2').css('display', 'none');
+
+  // when click choice1 btn
+  $('#work').click(function(){
+    $('.choice1').css('display', 'none');
+    if ($('.choice2').css('display') == 'none') {
+      $('.choice2').css('display', 'block');
+    }
+  });
+  $('#not_work').click(function(){
+    $('.choice1').css('display', 'none');
+    $('.again').css('display', 'block');
+  });
+
+  // when click choice2 btn
+  $('#mountain').click(function(){
+    $('.choice2').css('display', 'none');
+    $('.choice3').css('display', 'block');
+  });
+  $('#home').click(function(){
+    $('.choice2').css('display', 'none');
+    $('.choice3').css('display', 'block');
+  });
+
+  // when click choice3 btn
+  $('#go').click(function(){
+    $('.choice3').css('display', 'none');
+    $('.ending1').css('display', 'block');
+  });
+  $('#not_go').click(function(){
+    $('.choice3').css('display', 'none');
+    $('.ending2').css('display', 'block');
+  });
+</script>
 
 <footer>
     © Hanbee Cho, Hyeyeon Im, Taehun Lee
