@@ -3,12 +3,144 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>옛날 옛적에...</title>
+  <meta http-equiv="X-UA-Compatible" content = "IE=edge">
   <link rel="stylesheet" , href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>옛날 옛적에...</title>
 </head>
 
 <body>
-<h2>햇님 달님</h2>
+<h3>햇님 달님</h3>
+
+<br/>
+
+<div class = "choice1">
+  <h4 id = "question">옛날에 엄마와 오누이가 살았어요<br>엄마가 떡 장사를 하러 나갈까요?</h4></h4>
+  <div class = 'select'>
+  <button id = 'go'  class="ch_button2" role="button">엄마가 떡 장사를 하러 가요</button> <br>
+  <button id = 'not_go'  class="ch_button2" role="button">엄마가 떡 장사를 하러 가지 않아요</button> <br>
+</div>
+</div>
+
+<div class = "again">
+  <h4 id = "question">음식을 살 돈을 벌지 못해서 오누이가 배고파해요...</h4>
+  <div class = 'select'>
+  <button id = 'go2' class="ch_button2"role="button">엄마가 떡 장사를 하러 가요</button> <br>
+  <button id = 'not_go2' class="ch_button2"role="button">엄마가 떡 장사를 하러 가지 않아요</button> <br>
+</div>
+</div>
+
+<div class = "choice2">
+  <h4 id = "question">엄마가 떡 장사를 하고 돌아오는 길에 갈림길을 만났어요<br>어느 뱡향으로 갈까요?</h4>
+  <div class = 'select'>
+    <button id = 'left' class="ch_button2" >왼쪽 길</button> <br>  <!--호랑이 있음-->
+    <button id = 'right' class="ch_button2" >오른쪽 길</button> <br> <!--호랑이 없음-->
+</div>
+</div>
+
+<div class = "ending1">
+  <h4 id = "question">집으로 돌아온 어머니는 남은 떡을 오누이와 함깨 나눠 먹었답니다</h4>
+</div>
+
+<div class = "choice3">
+  <h4 id = "question">어머니가 호랑이를 만났어요!<br>어머니를 잡아먹은 호랑이가 오누이의 집으로 가요!<br>호랑이는 어떤 행동을 할까요?</h4>
+  <div class = 'select'>
+    <button id = 'likeMom' class="ch_button2" >호랑이가 어머니인 척 연기를 해요</button> <br>
+    <button id = 'push' class="ch_button2" >호랑이가 문을 부수려고 해요</button> <br>
+</div>
+</div>
+
+<div class = "choice4">
+  <h4 id = "question">호랑이와 대화하던 오누이들이 이상함을 느끼고 뒷문으로 도망쳤어요<br>오누이는 하늘에 살려달라고 빌었고 동앗줄이 내려왔어요</h4>
+  <div class = 'select'>
+    <button id = 'bro_sun1' class="ch_button2" >오빠가 왼쪽 동앗줄을, 동생이 오른쪽 동앗줄을 잡아요</button> <br>
+    <button id = 'sis_sun1' class="ch_button2" >오빠가 오른쪽 동앗줄을, 동생이 왼쪽 동앗줄을 잡아요</button> <br>
+</div>
+</div>
+
+<div class = "choice5">
+  <h4 id = "question">호랑이가 문을 부수는 사이 오누이들은 뒷문으로 도망쳤어요<br>오누이는 하늘에 살려달라고 빌었고 동앗줄이 내려왔어요</h4>
+  <div class = 'select'>
+    <button id = 'bro_sun2' class="ch_button2" >오빠가 왼쪽 동앗줄을, 동생이 오른쪽 동앗줄을 잡아요</button> <br>
+    <button id = 'sis_sun2' class="ch_button2" >오빠가 오른쪽 동앗줄을, 동생이 왼쪽 동앗줄을 잡아요</button> <br>
+</div>
+</div>
+       
+<div class = "ending2">
+  <h4 id = "question">오빠는 햇님이, 동생은 달님이 되었답니다</h4>
+</div>
+
+<div class = "ending3">
+  <h4 id = "question">오빠는 달님이, 동생은 햇님이 되었답니다</h4>
+</div> 
+
+<script>
+  $('.choice2').css('display', 'none');
+  $('.again').css('display', 'none');
+  $('.choice3').css('display', 'none');
+  $('.choice4').css('display', 'none');
+  $('.choice5').css('display', 'none');
+  $('.ending1').css('display', 'none');
+  $('.ending2').css('display', 'none');
+  $('.ending3').css('display', 'none');
+
+  // when click choice1 btn
+  $('#go').click(function(){
+    $('.choice1').css('display', 'none');
+    $('.choice2').css('display', 'block');
+  });
+  $('#not_go').click(function(){
+    $('.choice1').css('display', 'none');
+    $('.again').css('display', 'block');
+  });
+
+  // when click again
+  $('#go2').click(function(){
+    $('.again').css('display', 'none');
+    $('.choice2').css('display', 'block');
+  });
+
+  // when click choice2 btn
+    $('#left').click(function(){
+    $('.choice2').css('display', 'none');
+    $('.choice3').css('display', 'block');
+  });
+  $('#right').click(function(){
+    $('.choice2').css('display', 'none');
+    $('.ending1').css('display', 'block');
+  });
+
+  // when click choice3 btn
+    $('#likeMom').click(function(){
+    $('.choice3').css('display', 'none');
+    $('.choice4').css('display', 'block');
+  });
+  $('#push').click(function(){
+    $('.choice3').css('display', 'none');
+    $('.choice5').css('display', 'block');
+  });
+
+  // when click choice4 btn
+    $('#bro_sun1').click(function(){
+    $('.choice4').css('display', 'none');
+    $('.ending2').css('display', 'block');
+  });
+  $('#sis_sun1').click(function(){
+    $('.choice4').css('display', 'none');
+    $('.ending3').css('display', 'block');
+  });
+
+  // when click choice5 btn
+    $('#bro_sun2').click(function(){
+    $('.choice5').css('display', 'none');
+    $('.ending2').css('display', 'block');
+  });
+  $('#sis_sun2').click(function(){
+    $('.choice5').css('display', 'none');
+    $('.ending3').css('display', 'block');
+  });
+
+</script>
 
 <footer>
     © Hanbee Cho, Hyeyeon Im, Taehun Lee
