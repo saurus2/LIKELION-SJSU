@@ -60,8 +60,12 @@ body {
   margin-bottom: 20px;
 }
 
+/* ----------------------------------------------------------------------- */
+
 /* 한비님 디자인 확인 부탁 드려요! */
-.Choice1{
+
+/* lady 선택지 css*/
+.ch_button1{
   border: 15px #005F73;
   border-radius: 8px;
   padding-left: 60px;
@@ -71,27 +75,65 @@ body {
   cursor: pointer;
   font-size: 50px;
   color: #E9D8A6;
+  font-family: 'Jua', sans-serif;
+  background-color: #005F73;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* poorrich 선택지 css*/
+.ch_button2 {
+  border: 15px #005F73;
+  border-radius: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 50px;
+  color: #EE9B00;
   font-family: 'Jua', sans-serif;
   background-color: #005F73;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.Choice2{
+/* sunmoon 선택지 */
+.ch_button3 {
   border: 15px #005F73;
   border-radius: 8px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 45px;
+  padding-right: 45px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   font-size: 50px;
-  color: #E9D8A6;
+  color: #CA6702;
   font-family: 'Jua', sans-serif;
   background-color: #005F73;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
+
+/* 한 이야기가 끝나고 다른 이야기 선택 */
+.ending_button{
+  border: 15px #005F73;
+  border-radius: 8px;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 30px;
+  color: #CA6702;
+  font-family: 'Jua', sans-serif;
+  background-color: #005F73;
+  margin-top: 20px;
+}
+
+/* ----------------------------------------------------------------------- */
 
 .button1:hover {
   background-color: #E9D8A6;
