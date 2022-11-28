@@ -1,4 +1,6 @@
-        // when click food btn
+            
+       
+       // when click food btn
         $('#food_btn').click(function(){
             $('.menu').css('display', 'none');
             $('.food').css('display', 'block');
@@ -17,9 +19,12 @@
         });
 
         // when click home button
-        $('.home').click(function(){
+        $('.Home').click(function(){
             $('.menu').css('display', 'block');
             $('.sub').css('display', 'none');
         });
+
+        document.getElementById("vs").disabled = true;   
+
 
         
