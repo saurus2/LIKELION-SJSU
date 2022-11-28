@@ -56,6 +56,13 @@ body {
     animation: fadeInText 6s 5s ease-out forwards;
 }
 
+#score {
+    display: none;
+    font-size : 25px;
+    position: absolute;
+    top: 860px;
+    left: 50px;
+}
 
 @keyframes fadeInText {
     100% {
