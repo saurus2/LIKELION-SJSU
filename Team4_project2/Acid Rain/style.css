@@ -1,7 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/operosta');
+
+@font-face {
+    font-family: 'Maplestory OTF Bold';
+    src: url('./Maplestory\ OTF\ Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Maplestory OTF light';
+    src: url('./Maplestory\ OTF\ light.otf') format('opentype');
+}
+
 body {
-    background-image: url('sky.jpg');
-    color: rgb(83, 83, 83);
-    font-family: 'Times New Roman', Times, serif;
+    background-image: url('sky.png');
+    color: rgb(75, 75, 75);
     overflow: hidden;
 }
 
@@ -13,6 +24,7 @@ body {
     top: 10px;
     width: 50%;
     display: block;
+    font-family: 'Maplestory OTF light';
 }
 
 #input {
@@ -37,31 +49,45 @@ body {
 #buttons {
     position: absolute;
     top: 65%;
-    left: 42%;
+    left: 40%;
     display: block;
+    font-family: 'Maplestory OTF Bold';
 }
 
 #bt1 {
     opacity: 0;
-    animation: fadeInText 4s 3s ease-out forwards;
+    animation: fadeInText 3s 2s ease-out forwards;
+    font-family: 'Maplestory OTF Bold';
 }
 
 #bt2 {
     opacity: 0;
-    animation: fadeInText 5s 4s ease-out forwards;
+    animation: fadeInText 4s 3s ease-out forwards;
+    font-family: 'Maplestory OTF Bold';
 }
 
 #bt3 {
     opacity: 0;
-    animation: fadeInText 6s 5s ease-out forwards;
+    animation: fadeInText 5s 4s ease-out forwards;
+    font-family: 'Maplestory OTF Bold';
 }
 
 #score {
     display: none;
-    font-size : 25px;
+    font-size: 25px;
     position: absolute;
     top: 860px;
     left: 50px;
+    font-family: 'Maplestory OTF Bold';
+}
+
+#pH {
+    display: none;
+    font-size: 25px;
+    position: absolute;
+    top: 860px;
+    left: 1650px;
+    font-family: 'Maplestory OTF Bold';
 }
 
 @keyframes fadeInText {
@@ -74,52 +100,55 @@ body {
     font-size: 30px;
     font-weight: bold;
     border: none;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(83, 83, 83);
+    color: rgb(173, 173, 173);
     margin-right: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 
-#words-wrapper {
-    color: rgb(83, 83, 83);
-    position: absolute;
-    -webkit-perspective-origin: 50% 50%;
-    perspective-origin: 50% 50%;
-    -webkit-perspective: 500px;
-    perspective: 500px;
-    width: 500px;
-    height: 500px;
-    left: 50%;
-    top: 40%;
-    margin-left: -250px;
-    margin-top: -250px;
+#logo {
     display: block;
-}
-
-.word {
+    width: 50%;
+    height: auto;
     position: absolute;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: translateZ(1500px);
-    transform: translateZ(1500px);
-    -webkit-transition: -webkit-transform 1.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-        opacity 2.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transition: transform 1.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-        opacity 2.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    left: 500px;
+    top: 280px;
+    opacity: 0;
+    animation: fadeInText 2s 1s ease-out forwards;
 }
 
-.horizontal {
-    transform: translateZ(1500px) rotate(90deg);
-    -webkit-transform: translateZ(1500px) rotate(90deg);
+#gameover {
+    display: none;
+    color: rgb(150, 62, 62);
+    font-size: 70px;
+    position: absolute;
+    top: 270px;
+    left: 700px;
+    font-family: 'operosta', sans-serif;
 }
 
-.word.show {
-    opacity: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+#home {
+    display: none;
+    position: absolute;
+    top: 650px;
+    left: 835px;
+    color: rgb(96, 94, 94);
+    border: 0px;
+    background: none;
+    font-size: 35px;
+    font-family: 'operosta', sans-serif;
+
 }
 
-.word.horizontal.show {
-    -webkit-transform: translateZ(0) rotate(90deg);
-    transform: translateZ(0) rotate(90deg);
+#image {
+    display: none;
+    position: absolute;
+    top: 840px;
+    left: 1750px;
+    border: 1px solid #555;
+    width: 5%;
+    height: auto;
 }

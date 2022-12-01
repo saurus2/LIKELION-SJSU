@@ -3,14 +3,160 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>옛날 옛적에...</title>
+  <meta http-equiv="X-UA-Compatible" content = "IE=edge">
   <link rel="stylesheet" , href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>옛날 옛적에...</title>
 </head>
 
 <body>
-<h4>흥부와 놀부</h4>
+<h3>흥부와 놀부</h3>
 
-<br />
+<br/>
+
+<div class = "choice1">
+  <h4 id = "question">옛날에 욕심쟁이 형 놀부와 착한 동생 흥부가 살았어요.<br>부모님이 돌아가셔서 재산을 나누어야 해요<br>흥부가 재산을 형인 놀부에게 양보할까요?</h4></h4>
+  <div class = 'select'>
+  <button id = 'yes'  class="ch_button2" role="button">양보 해요</button> <br>
+  <button id = 'no'  class="ch_button2" role="button">양보 안 해요</button> <br>
+</div>
+</div>
+
+<div class = "steal">
+  <h4 id = "question">놀부가 흥부의 재산을 빼았았어요<br>아이들이 배고파해요<br>놀부 집으로 동냥을 하러 갈까요?</h4>
+  <div class = 'select'>
+  <button id = 'go'  class="ch_button2"role="button">동냥 하러 가요</button> <br>
+  <button id = 'not_go'  class="ch_button2"role="button">동냥 하러 가지 않아요</button> <br>
+</div>
+</div>
+
+<div class = "choice2">
+  <h4 id = "question">놀부에게 재산을 양보해서 먹을 음식이 없어요<br>놀부 집으로 동냥을 갈까요?</h4>
+  <div class = 'select'>
+    <button id = 'go2' class="ch_button2" >동냥 하러 가요</button> <br>
+    <button id = 'not_go2' class="ch_button2" >동냥 하러 가지 않아요</button> <br>
+</div>
+</div>
+
+<div class = "again">
+  <h4 id = "question">아이들이 배고파해요...<br>놀부 집으로 동냥을 갈까요?</h4>
+  <div class = 'select'>
+    <button id = 'go3' class="ch_button2" >동냥 하러 가요</button> <br>
+    <button id = 'not_go3' class="ch_button2" >동냥 하러 가지 않아요</button> <br>
+</div>
+</div>
+
+<div class = "choice3">
+  <h4 id = "question">동냥으로 밥을 얻어오는 길에 다친 제비를 봤어요!</h4>
+  <div class = 'select'>
+    <button id = 'just_care' class="ch_button2" >다친 제비를 치료해주고 보내줘요</button> <br>
+    <button id = 'care_home' class="ch_button2" >다친 제비를 치료해주고 집으로 데려가요</button> <br>
+</div>
+</div>
+
+<div class = "choice4">
+  <h4 id = "question">제비가 어느 날 박씨를 물어왔어요!<br>박이 점점 커서 캐야 해요!</h4>
+  <div class = 'select'>
+    <button id = 'do' class="ch_button2" >캐요</button> <br>
+    <button id = 'not' class="ch_button2" >안 캐요</button> <br>
+</div>
+</div>
+
+<div class = "choice5">
+  <h4 id = "question"> 제바가 어느날 날아갔어요 그리고 어느 날 박씨를 물어왔어요!<br>박이 점점 커서 캐야 해요!</h4>
+  <div class = 'select'>
+    <button id = 'do2' class="ch_button2" >캐요</button> <br>
+    <button id = 'not2' class="ch_button2" >안 캐요</button> <br>
+</div>
+</div>
+       
+<div class = "ending1">
+  <h4 id = "question">캔 박에서 금은 보화가 나왔어요!!</h4>
+  <button class="ending_button" onclick="location.href= 'index.html';">다른 이야기 해보기</button>
+</div>
+
+<div class = "ending2">
+  <h4 id = "question">박이 더 무르익어서 알아서 터졌어요!<br>터진 박에서는 어마어마한 양의 금은 보화가 나왔답니다!</h4>
+  <button class="ending_button" onclick="location.href= 'index.html';">다른 이야기 해보기</button>
+</div> 
+
+<script>
+  $('.steal').css('display', 'none');
+  $('.choice2').css('display', 'none');
+  $('.again').css('display', 'none');
+  $('.choice3').css('display', 'none');
+  $('.choice4').css('display', 'none');
+  $('.choice5').css('display', 'none');
+  $('.ending1').css('display', 'none');
+  $('.ending2').css('display', 'none');
+
+  // when click choice1 btn
+  $('#yes').click(function(){
+    $('.choice1').css('display', 'none');
+    $('.choice2').css('display', 'block');
+  });
+  $('#no').click(function(){
+    $('.choice1').css('display', 'none');
+    $('.steal').css('display', 'block');
+  });
+
+  // when click steal btn
+    $('#go').click(function(){
+    $('.steal').css('display', 'none');
+    $('.choice3').css('display', 'block');
+  });
+  $('#not_go').click(function(){
+    $('.steal').css('display', 'none');
+    $('.again').css('display', 'block');
+  });
+
+  // when click choice2 btn
+    $('#go2').click(function(){
+    $('.choice2').css('display', 'none');
+    $('.choice3').css('display', 'block');
+  });
+  $('#not_go2').click(function(){
+    $('.choice2').css('display', 'none');
+    $('.again').css('display', 'block');
+  });
+
+  // when click again
+    $('#go3').click(function(){
+    $('.again').css('display', 'none');
+    $('.choice3').css('display', 'block');
+  });
+
+  // when click choice3 btn
+    $('#just_care').click(function(){
+    $('.choice3').css('display', 'none');
+    $('.choice4').css('display', 'block');
+  });
+  $('#care_home').click(function(){
+    $('.choice3').css('display', 'none');
+    $('.choice5').css('display', 'block');
+  });
+
+  // when click choice4 btn
+    $('#do').click(function(){
+    $('.choice4').css('display', 'none');
+    $('.ending1').css('display', 'block');
+  });
+  $('#not').click(function(){
+    $('.choice4').css('display', 'none');
+    $('.ending2').css('display', 'block');
+  });
+
+  // when click choice5 btn
+    $('#do2').click(function(){
+    $('.choice5').css('display', 'none');
+    $('.ending1').css('display', 'block');
+  });
+  $('#not2').click(function(){
+    $('.choice5').css('display', 'none');
+    $('.ending2').css('display', 'block');
+  });
+
+</script>
 
 <footer>
     © Hanbee Cho, Hyeyeon Im, Taehun Lee
