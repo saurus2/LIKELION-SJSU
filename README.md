@@ -29,8 +29,6 @@ https://taewow.tistory.com/13
 김용준
 문호근
 이다솜
-<<<<<<< HEAD
 노희재
-=======
 김재원
->>>>>>> aa7548c08312fa46c95efc4329c42da6a38868aa
+김형근
