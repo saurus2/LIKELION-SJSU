@@ -25,4 +25,8 @@ https://taewow.tistory.com/13
 # 멋쟁이 사자처럼 맴버
 최지혁 
 김양휘
->>>>>>> refs/remotes/origin/main
+유재성
+이주한
+조한비
+김용준
+>>>>>>> fe9084b25e3d0f757d0c13af1fa5a7abdb75868c
