@@ -19,6 +19,3 @@ git config --global user.email ?
 
 # git 설치 Window 하는법
 https://taewow.tistory.com/13
-
-# Name
-김재원
