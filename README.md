@@ -29,7 +29,7 @@ https://taewow.tistory.com/13
 김용준
 문호근
 이다솜
-노희재(사우스산호세)
+노희재 (사우스산호세)
 김재원
 김형근
 
@@ -38,3 +38,4 @@ https://taewow.tistory.com/13
 김재원
 유재성
 최지혁
+노희재
