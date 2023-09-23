@@ -21,6 +21,9 @@ git config --global user.email ?
 https://taewow.tistory.com/13
 
 <<<<<<< HEAD
+Luke Park
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -41,7 +44,12 @@ https://taewow.tistory.com/13
 김용준
 김재원
 <<<<<<< HEAD
+이다솜
+=======
+<<<<<<< HEAD
 >>>>>>> fe9084b25e3d0f757d0c13af1fa5a7abdb75868c
 =======
+>>>>>>> 8df849bb1a649c62d5082df8e531b12b681949f8
 >>>>>>> f1bae896e4b223c6a469e4d7c4ed6589f5f5bbea
 >>>>>>> bfa66320da71de8658e1b6b137da91c4c9e49886
+>>>>>>> 8df849bb1a649c62d5082df8e531b12b681949f8
