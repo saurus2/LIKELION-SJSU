@@ -22,8 +22,14 @@ https://taewow.tistory.com/13
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # 멋쟁이 사자처럼 맴버
+=======
+# 멋쟁이 사자처럼 맴버
+최지혁 
+아아아아 
+>>>>>>> bfa66320da71de8658e1b6b137da91c4c9e49886
 =======
 # 멋쟁이 사자처럼 멤버
 >>>>>>> f1bae896e4b223c6a469e4d7c4ed6589f5f5bbea
@@ -33,4 +39,8 @@ https://taewow.tistory.com/13
 이주한
 조한비
 김용준
+<<<<<<< HEAD
 >>>>>>> fe9084b25e3d0f757d0c13af1fa5a7abdb75868c
+=======
+>>>>>>> f1bae896e4b223c6a469e4d7c4ed6589f5f5bbea
+>>>>>>> bfa66320da71de8658e1b6b137da91c4c9e49886
