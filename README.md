@@ -1,6 +1,11 @@
 # LIKELION-SJSU
 멋쟁이 사자처럼 서부 San Jose State University Repo
 
+alksjflajsdkfjlfj
+asldkfjlasdkjf
+askldfjlasdkjf
+lkasjflaskdjf
+
 # 오프라인 미팅 실습 제출 방식
 1. 실습 프로젝트 디렉토리
 2. 각 팀 이름-날짜 디렉토리 생성
