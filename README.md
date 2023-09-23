@@ -28,5 +28,4 @@ https://taewow.tistory.com/13
 조한비
 김용준
 문호근
-김재원
 이다솜
