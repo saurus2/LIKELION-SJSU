@@ -20,5 +20,19 @@ git config --global user.email ?
 # git 설치 Window 하는법
 https://taewow.tistory.com/13
 
-# Name
+# 멋쟁이 사자처럼 멤버
+최지혁
+김양휘
+유재성
+이주한
+조한비
+김용준
+문호근
+이다솜
+노희재(사우스산호세)
+김재원
+김형근
+
+# 브랜치 테스트
+이주한
 김재원
