@@ -23,3 +23,4 @@ https://taewow.tistory.com/13
 # 멋쟁이 사자처럼 맴버
 최지혁 
 유재성
+이주한
