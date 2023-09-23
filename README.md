@@ -21,8 +21,8 @@ git config --global user.email ?
 https://taewow.tistory.com/13
 
 <<<<<<< HEAD
-김양휘
-=======
+
 # 멋쟁이 사자처럼 맴버
 최지혁 
+김양휘
 >>>>>>> refs/remotes/origin/main
