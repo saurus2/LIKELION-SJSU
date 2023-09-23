@@ -21,8 +21,12 @@ git config --global user.email ?
 https://taewow.tistory.com/13
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # 멋쟁이 사자처럼 맴버
+=======
+# 멋쟁이 사자처럼 멤버
+>>>>>>> f1bae896e4b223c6a469e4d7c4ed6589f5f5bbea
 최지혁 
 김양휘
 유재성
