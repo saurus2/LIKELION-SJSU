@@ -21,7 +21,7 @@ git config --global user.email ?
 https://taewow.tistory.com/13
 
 # 멋쟁이 사자처럼 멤버
-최지혁 
+최지혁
 김양휘
 유재성
 이주한
