@@ -20,7 +20,7 @@ git config --global user.email ?
 # git 설치 Window 하는법
 https://taewow.tistory.com/13
 
-# 멋쟁이 사자처럼 맴버
+# 멋쟁이 사자처럼 멤버
 최지혁 
 유재성
 이주한
