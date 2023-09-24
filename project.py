@@ -98,20 +98,21 @@ class BudgetPlanner:
         with open("budget.json", "w") as outfile:
             json.dump(self.dict, outfile)
     
-    def budgetplanning(self):
+    def budgetplanning(self):        
         print("This is your total summary.")
 
-        print("Your total monthly income is ", self.dict["income"])
+        print("Your total monthly income is", self.dict["income"])
 
-        print("Your total saving is ", str(self.dict["saving"]) + " It is ", str(self.user_percentage) + "percent of your total income.")
+        print("Your total saving is ", str(self.dict["saving"]) + " It is", str(self.user_percentage) + " percent of your total income.")
 
-        print("Your Rental expenditure is ", str(self.dict["expenditures"]["rent"]) + " It is ", str(self.exp_values[0]) + " percent of your total income.")
+        print("Your Rental expenditure is", str(self.dict["expenditures"]["rent"]) + " It is", str(self.exp_values[0]) + " percent of your total income.")
 
-        print("Your Grocery expenditure is ", str(self.dict["expenditures"]["grocery"]) + " It is ", str(self.exp_values[1]) + " percent of your total income.")
+        print("Your Grocery expenditure is", str(self.dict["expenditures"]["grocery"]) + " It is", str(self.exp_values[1]) + " percent of your total income.")
 
-        print("Your Leisure expenditure is ", str(self.dict["expenditures"]["leisure"]) + " It is ", str(self.exp_values[2]) + " percent of your total income.")
+        print("Your Leisure expenditure is", str(self.dict["expenditures"]["leisure"]) + " It is", str(self.exp_values[2]) + " percent of your total income.")
 
-        print("Your Others expenditure is ", str(self.dict["expenditures"]["others"]) + " It is ", str(self.exp_values[3]) + " percent of your total income.")
+        print("Your Others expenditure is", str(self.dict["expenditures"]["others"]) + " It is", str(self.exp_values[3]) + " percent of your total income.")
+
 
 bp = BudgetPlanner()
 bp.welcomeMessage()
