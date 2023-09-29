@@ -112,13 +112,13 @@ class BudgetPlanner:
 
         print("Your total saving is ", str(self.dict["saving"]) + " It is", str(self.user_percentage) + " percent of your total income.")
 
-        print("Your Rental expenditure is", str(self.dict["expenditures"]["rent"]) + " It is", str(self.exp_values[0]) + " percent of your total income.")
+        print("Your Rental expenditure is", str(self.dict["expenditures"]["rent"]) + " It is", str(self.exp_values[0]) + " percent of your total income without saving.")
 
-        print("Your Grocery expenditure is", str(self.dict["expenditures"]["grocery"]) + " It is", str(self.exp_values[1]) + " percent of your total income.")
+        print("Your Grocery expenditure is", str(self.dict["expenditures"]["grocery"]) + " It is", str(self.exp_values[1]) + " percent of your total income without saving.")
 
-        print("Your Leisure expenditure is", str(self.dict["expenditures"]["leisure"]) + " It is", str(self.exp_values[2]) + " percent of your total income.")
+        print("Your Leisure expenditure is", str(self.dict["expenditures"]["leisure"]) + " It is", str(self.exp_values[2]) + " percent of your total income without saving.")
 
-        print("Your Others expenditure is", str(self.dict["expenditures"]["others"]) + " It is", str(self.exp_values[3]) + " percent of your total income.")
+        print("Your Others expenditure is", str(self.dict["expenditures"]["others"]) + " It is", str(self.exp_values[3]) + " percent of your total income without saving.")
 
 
 bp = BudgetPlanner()
