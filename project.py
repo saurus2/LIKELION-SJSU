@@ -21,23 +21,23 @@ class BudgetPlanner:
             print("*5. Exit                                    *")
             print("*" * 45)
             print("Choose your option!!!")
-            user_option = int(input())
-            if user_option == 1:
-                self.addMonthlyIncome()
-            elif user_option == 2:
-                self.saving()
-            elif user_option == 3:
-                self.expense()
-            elif user_option == 4:
-                self.saveinput()
-                print("Thank you for your input, your budget planning is completed")
-                self.budgetplanning()
-            elif user_option == 5:
-                print("You've ended your program. Please come again")
-                break
-            else:
+            try:
+                user_option = int(input())
+                if user_option == 1:
+                    self.addMonthlyIncome()
+                elif user_option == 2:
+                    self.saving()
+                elif user_option == 3:
+                    self.expense()
+                elif user_option == 4:
+                    self.saveinput()
+                    print("Thank you for your input, your budget planning is completed")
+                    self.budgetplanning()
+                elif user_option == 5:
+                    print("You've ended your program. Please come again")
+                    break
+            except ValueError:
                 print("Please enter correct input!")
-    
    
     def addMonthlyIncome(self):
         while True:
@@ -56,7 +56,11 @@ class BudgetPlanner:
             print("Choose your saving option: ")
             print("1. Percentage option")
             print("2. Exit the option")
-            user_input = int(input())
+            try:
+                user_input = int(input())
+            except:
+                print("Please provide value option!")
+                continue
             if user_input == 1:
                 print("Enter the percentage you want to apply: ")
                 self.user_percentage = int(input())
@@ -70,7 +74,7 @@ class BudgetPlanner:
                     print("Out of your total monthly income ", self.dict['income'])
                     print("Your monthly expenditure would be ", self.dict["changed"])
                     print("Your monthly savings would be ", self.dict['saving'])
-            else:
+            elif user_input ==2:
                 break
 
     def expense(self):
@@ -79,21 +83,24 @@ class BudgetPlanner:
             print("Format: R(Rent),G(Grocery),L(Leisure),O(Others)\n")
             print("Example: 30,20,25,25")
             #Please enter percentages for R, G, L, O to be added up to 100% in total
-            user_input = input().split(",")
-            for v in user_input:
-                self.exp_values.append(int(v))
-            if sum(self.exp_values) != 100:
-                print("does not add up to 100")
-                continue
-            else:
-                print(f"Rent:{self.exp_values[0]}\nGrocery:{self.exp_values[1]}\nLeisure:{self.exp_values[2]}\nOthers:{self.exp_values[3]}")
-                self.dict["expenditures"] = dict()
-                self.dict["expenditures"]["rent"] = self.exp_values[0] /100 * (self.dict["changed"])
-                self.dict["expenditures"]["grocery"] = self.exp_values[1] /100 * (self.dict["changed"])
-                self.dict["expenditures"]["leisure"] = self.exp_values[2] /100 * (self.dict["changed"])
-                self.dict["expenditures"]["others"] = self.exp_values[3] /100 * (self.dict["changed"])
-                break
-    
+            try:
+                user_input = input().split(",")
+                for v in user_input:
+                    self.exp_values.append(int(v))
+                if sum(self.exp_values) != 100:
+                    print("does not add up to 100")
+                    continue
+                else:
+                    print(f"Rent:{self.exp_values[0]}\nGrocery:{self.exp_values[1]}\nLeisure:{self.exp_values[2]}\nOthers:{self.exp_values[3]}")
+                    self.dict["expenditures"] = dict()
+                    self.dict["expenditures"]["rent"] = self.exp_values[0] /100 * (self.dict["changed"])
+                    self.dict["expenditures"]["grocery"] = self.exp_values[1] /100 * (self.dict["changed"])
+                    self.dict["expenditures"]["leisure"] = self.exp_values[2] /100 * (self.dict["changed"])
+                    self.dict["expenditures"]["others"] = self.exp_values[3] /100 * (self.dict["changed"])
+                    break
+            except ValueError:
+                print("Please provide percentages in a proper format! ex: 30,20,25,25")    
+
     def saveinput(self):
         with open("budget.json", "w") as outfile:
             json.dump(self.dict, outfile)
