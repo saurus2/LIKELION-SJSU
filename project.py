@@ -111,7 +111,7 @@ class BudgetPlanner:
 
         print("Your Leisure expenditure is", str(self.dict["expenditures"]["leisure"]) + " It is", str(self.exp_values[2]) + " percent of your total income.")
 
-        print("Your Others expenditure is", str(self.dict["expenditures"]["others"]) + " It is", str(self.exp_values[3]) + " percent of your total income.")
+        print("Your Others expenditure is ", str(self.dict["expenditures"]["others"]) + " It is", str(self.exp_values[3]) + " percent of your total income.")
 
 
 bp = BudgetPlanner()
