@@ -1,6 +1,16 @@
 from django.db import models
+import sqlite3
+import pandas as pd
+
+cxn = sqlite3.connect('db.sqlite3')
+wb = pd.read_excel('db_expenditure.xlsx')
+wb.to_sql(name='Expenditure',con=cxn,if_exists='replace',index=True)
+cxn.commit()
+cxn.close()
 
 # Create your models here.
+
+'''
 class Users(models.Model):
     Income = models.IntegerField(verbose_name= 'Income')
     Savings = models.IntegerField(verbose_name= 'Savings', default=0, blank = True)
@@ -21,3 +31,4 @@ class Expenditures(models.Model):
     month = models.IntegerField(verbose_name= 'Month', default=0, blank = True)
     year = models.IntegerField(verbose_name= 'Year', default=0, blank = True)
     UserId = models.ForeignKey(to = "Users", on_delete = models.CASCADE)
+'''
