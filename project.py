@@ -1,11 +1,12 @@
 import json
 
+
 class BudgetPlanner:
     def __init__(self):
         self.dict = {}
         self.exp_values = list()
         self.user_percentage = 0
-        
+
     def welcomeMessage(self):
         print("——————————————-----------------")
         print(" Welcome to Budget Planner!!! ")
@@ -38,7 +39,7 @@ class BudgetPlanner:
                     break
             except ValueError:
                 print("Please enter correct input!")
-   
+
     def addMonthlyIncome(self):
         while True:
             print("Please enter your current monthly income: ")
@@ -49,7 +50,7 @@ class BudgetPlanner:
                 self.dict["changed"] = self.dict["income"]
                 break
             except ValueError:
-                print("Please provide your income in a form of integer!")    
+                print("Please provide your income in a form of integer!")
 
     def saving(self):
         while True:
@@ -71,18 +72,20 @@ class BudgetPlanner:
                 else:
                     self.dict["saving"] = saving
                     self.dict["changed"] = self.dict["income"] - self.dict["saving"]
-                    print("Out of your total monthly income ", self.dict['income'])
+                    print("Out of your total monthly income ", self.dict["income"])
                     print("Your monthly expenditure would be ", self.dict["changed"])
-                    print("Your monthly savings would be ", self.dict['saving'])
-            elif user_input ==2:
+                    print("Your monthly savings would be ", self.dict["saving"])
+            elif user_input == 2:
                 break
 
     def expense(self):
         while True:
-            print("Please enter percentages for Rent, Grocery, Leisure, Others in integers to be added up to 100% in total\n")
+            print(
+                "Please enter percentages for Rent, Grocery, Leisure, Others in integers to be added up to 100% in total\n"
+            )
             print("Format: R(Rent),G(Grocery),L(Leisure),O(Others)\n")
             print("Example: 30,20,25,25")
-            #Please enter percentages for R, G, L, O to be added up to 100% in total
+            # Please enter percentages for R, G, L, O to be added up to 100% in total
             try:
                 user_input = input().split(",")
                 for v in user_input:
@@ -91,34 +94,64 @@ class BudgetPlanner:
                     print("does not add up to 100")
                     continue
                 else:
-                    print(f"Rent:{self.exp_values[0]}\nGrocery:{self.exp_values[1]}\nLeisure:{self.exp_values[2]}\nOthers:{self.exp_values[3]}")
+                    print(
+                        f"Rent:{self.exp_values[0]}\nGrocery:{self.exp_values[1]}\nLeisure:{self.exp_values[2]}\nOthers:{self.exp_values[3]}"
+                    )
                     self.dict["expenditures"] = dict()
-                    self.dict["expenditures"]["rent"] = self.exp_values[0] /100 * (self.dict["changed"])
-                    self.dict["expenditures"]["grocery"] = self.exp_values[1] /100 * (self.dict["changed"])
-                    self.dict["expenditures"]["leisure"] = self.exp_values[2] /100 * (self.dict["changed"])
-                    self.dict["expenditures"]["others"] = self.exp_values[3] /100 * (self.dict["changed"])
+                    self.dict["expenditures"]["rent"] = (
+                        self.exp_values[0] / 100 * (self.dict["changed"])
+                    )
+                    self.dict["expenditures"]["grocery"] = (
+                        self.exp_values[1] / 100 * (self.dict["changed"])
+                    )
+                    self.dict["expenditures"]["leisure"] = (
+                        self.exp_values[2] / 100 * (self.dict["changed"])
+                    )
+                    self.dict["expenditures"]["others"] = (
+                        self.exp_values[3] / 100 * (self.dict["changed"])
+                    )
                     break
             except ValueError:
-                print("Please provide percentages in a proper format! ex: 30,20,25,25")    
+                print("Please provide percentages in a proper format! ex: 30,20,25,25")
 
     def saveinput(self):
         with open("budget.json", "w") as outfile:
             json.dump(self.dict, outfile)
-    
-    def budgetplanning(self):        
+
+    def budgetplanning(self):
         print("This is your total summary.")
 
         print("Your total monthly income is", self.dict["income"])
 
-        print("Your total saving is ", str(self.dict["saving"]) + " It is", str(self.user_percentage) + " percent of your total income.")
+        print(
+            "Your total saving is ",
+            str(self.dict["saving"]) + " It is",
+            str(self.user_percentage) + " percent of your total income.",
+        )
 
-        print("Your Rental expenditure is", str(self.dict["expenditures"]["rent"]) + " It is", str(self.exp_values[0]) + " percent of your total income without saving.")
+        print(
+            "Your Rental expenditure is",
+            str(self.dict["expenditures"]["rent"]) + " It is",
+            str(self.exp_values[0]) + " percent of your total income without saving.",
+        )
 
-        print("Your Grocery expenditure is", str(self.dict["expenditures"]["grocery"]) + " It is", str(self.exp_values[1]) + " percent of your total income without saving.")
+        print(
+            "Your Grocery expenditure is",
+            str(self.dict["expenditures"]["grocery"]) + " It is",
+            str(self.exp_values[1]) + " percent of your total income without saving.",
+        )
 
-        print("Your Leisure expenditure is", str(self.dict["expenditures"]["leisure"]) + " It is", str(self.exp_values[2]) + " percent of your total income without saving.")
+        print(
+            "Your Leisure expenditure is",
+            str(self.dict["expenditures"]["leisure"]) + " It is",
+            str(self.exp_values[2]) + " percent of your total income without saving.",
+        )
 
-        print("Your Others expenditure is", str(self.dict["expenditures"]["others"]) + " It is", str(self.exp_values[3]) + " percent of your total income without saving.")
+        print(
+            "Your Others expenditure is",
+            str(self.dict["expenditures"]["others"]) + " It is",
+            str(self.exp_values[3]) + " percent of your total income without saving.",
+        )
 
 
 bp = BudgetPlanner()
