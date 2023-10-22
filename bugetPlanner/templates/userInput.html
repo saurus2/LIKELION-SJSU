@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-group button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Expense Tracker</h2>
+        <form id="expenseForm">
+            <div class="input-group">
+                <label for="income">Income:</label>
+                <input type="number" id="income" name="income" required>
+            </div>
+
+            <div class="input-group">
+                <label for="savings">Savings: %</label>
+                <input type="number" id="savings" name="savings" required>
+            </div>
+
+            <div class="input-group">
+                <label for="rent">Rent: %</label>
+                <input type="number" id="rent" name="rent" required>
+            </div>
+
+            <div class="input-group">
+                <label for="leisure">Leisure: %</label>
+                <input type="number" id="leisure" name="leisure" required>
+            </div>
+
+            <div class="input-group">
+                <label for="grocery">Grocery: %</label>
+                <input type="number" id="grocery" name="grocery" required>
+            </div>
+
+            <div class="input-group">
+                <label for="others">Others: %</label>
+                <input type="number" id="others" name="others" required>
+            </div>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+            <label>The sum of percentage of Rent, Leisure, grocery, and others should be 100.</label>
+        </form>
+    </div>
+</body>
+
+</html>

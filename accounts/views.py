@@ -25,7 +25,7 @@ def login_view(request):
         form = AuthenticationForm(request, request.POST)
         if form.is_valid():
             login(request, form.user_cache)
-            return render(request, 'accounts/menu.html', {'form':form})
+            return redirect('accounts:menu')
         else:
             return render(request, 'accounts/login.html', {'form':form})
         
@@ -36,4 +36,7 @@ def logout_view(request):
 
 def menu_view(request):
     return render(request, 'menu.html')
+
+def userInput_view(request):
+    return render(request, 'userInput.html')
 
