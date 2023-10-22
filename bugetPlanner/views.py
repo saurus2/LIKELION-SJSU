@@ -17,10 +17,14 @@ def home_view(request):
         form = AuthenticationForm(request, request.POST)
         if form.is_valid():
             login(request, form.user_cache)
-            return redirect('home')
+            return render(request, 'menu.html', {'form':form})
+
         else:
             return render(request, 'home.html', {'form':form})
 
 def get_all_users():
     all_users = User.objects.all()
     return all_users
+def menu_view(request):
+    return render(request, 'menu.html')
+

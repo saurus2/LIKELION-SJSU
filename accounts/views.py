@@ -25,11 +25,15 @@ def login_view(request):
         form = AuthenticationForm(request, request.POST)
         if form.is_valid():
             login(request, form.user_cache)
-            return redirect('planner')
+            return render(request, 'accounts/menu.html', {'form':form})
         else:
             return render(request, 'accounts/login.html', {'form':form})
         
 def logout_view(request):
     if request.user.is_authenticated:
         logout(request)
-    return redirect('planner')
+    return redirect('home')
+
+def menu_view(request):
+    return render(request, 'menu.html')
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Menu</title>
+    <style>
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li>
+            <span>Enter values for the budget planner</span>
+            <button onclick="goToPage('page1.html')">Go</button>
+        </li>
+        <li>
+            <span>Summary of your budget planner</span>
+            <button onclick="goToPage('page2.html')">Go</button>
+        </li>
+    </ul>
+
+    <script>
+        function goToPage(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
