@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Summary{% endblock %}
+
+{% block content %}
+<h1> Personal Budget Manager </h1>
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="income">income:</label><br>
+    <label for="saving">Saving:</label><br>
+</form>
+{% endblock %}
