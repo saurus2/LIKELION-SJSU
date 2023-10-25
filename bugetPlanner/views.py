@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.models import User
+from.models import Users, Expenditures
 
 # Create your views here.
 def planner_view(request):
@@ -25,6 +26,16 @@ def home_view(request):
 def get_all_users():
     all_users = User.objects.all()
     return all_users
+
 def menu_view(request):
     return render(request, 'menu.html')
+
+def user_summary(request):
+    user_id = request.user.id
+    user_summary_sa = Users.objects.all(UserId = user_id)
+    user_summary_ex = Expenditures.objects.all(UserId = user_id)
+    merged_data = list(user_summary_sa) + list(user_summary_ex)
+
+    return render(request, 'summary.html', {'merged_data': merged_data})
+
 

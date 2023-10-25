@@ -40,3 +40,5 @@ def menu_view(request):
 def userInput_view(request):
     return render(request, 'userInput.html')
 
+
+

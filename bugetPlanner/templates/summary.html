@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merged Data</title>
+</head>
+<body>
+    <h1>Merged Data</h1>
+    <ul>
+        {% for item in merged_data %}
+            <li>{{ item.field_name }}</li>
+            <!-- Display other fields as needed -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
