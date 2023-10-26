@@ -55,7 +55,8 @@
 <body>
     <div class="container">
         <h2>Expense Tracker</h2>
-        <form id="expenseForm">
+        <form method="post" action="{% url 'summary' %}">
+        {% csrf_token %}
             <div class="input-group">
                 <label for="income">Income:</label>
                 <input type="number" id="income" name="income" required>
@@ -86,7 +87,7 @@
                 <input type="number" id="others" name="others" required>
             </div>
 
-            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="submit">Submit</button>
             <label>The sum of percentage of Rent, Leisure, grocery, and others should be 100.</label>
         </form>
     </div>
