@@ -2,6 +2,23 @@
 <html>
 <head>
     <title>Summary of your Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .buttons {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <h1>Summary for your Budget</h1>
@@ -22,5 +39,6 @@
             <br>
         {% endfor %}
     </ul>
+    <a class="buttons" href="{% url 'menu' %}">Menu</a>
 </body>
 </html>

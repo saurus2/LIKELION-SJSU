@@ -17,6 +17,17 @@
             height: 100vh;
         }
 
+        .buttons {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
         .container {
             background-color: white;
             padding: 20px;
@@ -87,9 +98,10 @@
                 <input type="number" id="others" name="others" required>
             </div>
 
-            <button type="submit">Submit</button>
-            <label>The sum of percentage of Rent, Leisure, grocery, and others should be 100.</label>
+            <label>The sum of percentage of Rent, Leisure, grocery, and others should be 100.</label><br>
+            <button type="submit" class="buttons">Submit</button>
         </form>
+        <a class="buttons" href="{% url 'menu' %}">Back</a>
     </div>
 </body>
 
