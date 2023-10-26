@@ -23,23 +23,21 @@
 <body>
     <h1>Summary for your Budget</h1>
     
-    <ul>
-        {% for item in users_data %}
-            <h2>Summary for Income & Savings</h2>
-            <li>income is {{ item.income}}</li>
-            <li>saving is {{ item.savings}}</li>
-            <li>remaining is {{ item.remaining}}</li>
-            <br>
-        {% endfor %}
-        {% for item in expenditures_data %}
-            <h2>Summary for expenditures</h2>
-            <li>rent is {{ item.rent}}</li>
-            <li>leisure is {{ item.leisure}}</li>
-            <li>grocery is {{ item.grocery}}</li>
-            <li>others is {{ item.others}}</li>
-            <br>
-            <br>
-        {% endfor %}
+        <ul>
+            {% for data in merged_data %}
+                <h2>Summary {{ forloop.counter }}</h2>
+                <h3>Income & Savings</h3>
+                <li>income is {{ data.user_data.income }}</li>
+                <li>saving is {{ data.user_data.savings }}</li>
+                <li>remaining is {{ data.user_data.remaining }}</li>
+                <br>
+                <h3>Expenditures</h3>
+                <li>rent is {{ data.expenditures_data.rent }}</li>
+                <li>leisure is {{ data.expenditures_data.leisure }}</li>
+                <li>grocery is {{ data.expenditures_data.grocery }}</li>
+                <li>others is {{ data.expenditures_data.others }}</li>
+                <br><br>
+            {% endfor %}
     </ul>
     <a class="buttons" href="{% url 'menu' %}">Menu</a>
 </body>

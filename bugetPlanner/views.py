@@ -73,11 +73,15 @@ def menu_view(request):
 def user_summary(request):
     users_data = Users.objects.filter(user_id=request.user)
     expenditures_data = Expenditures.objects.filter(user_id = request.user)
-    merged_data = {
-        'user_data': users_data,
-        'expenditures_data': expenditures_data,
-    }
-    return render(request, 'summary.html', {'users_data': users_data, 'expenditures_data' : expenditures_data})
+    count = len(users_data)
+    merged_data = [
+        {
+            'user_data': users_data[i],
+            'expenditures_data': expenditures_data[i]
+        }
+        for i in range(count)
+    ]
+    return render(request, 'summary.html', {'merged_data': merged_data, 'count': count})
     #return render(request, 'summary.html', {'merged_data': merged_data})
 #     user_id = request.user.id
 #     user_summary_sa = Users.objects.all(UserId = user_id)
