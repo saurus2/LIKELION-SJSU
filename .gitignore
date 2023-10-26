@@ -1,4 +1,5 @@
 *.pyc
+venv/
 test2.txt
 test3.txt.DS_Store
 .DS_Store

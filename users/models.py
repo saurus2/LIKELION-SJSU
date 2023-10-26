@@ -9,11 +9,7 @@ from django.db import models
 import sqlite3
 import pandas as pd
 
-cxn = sqlite3.connect('db.sqlite3')
-wb = pd.read_excel('db_expenditure.xlsx')
-wb.to_sql(name='Expenditure',con=cxn,if_exists='replace',index=True)
-cxn.commit()
-cxn.close()
+
 
 # Create your models here.
 
