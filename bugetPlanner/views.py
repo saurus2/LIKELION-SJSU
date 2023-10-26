@@ -29,8 +29,6 @@ def get_all_users():
     return all_users
 
 
-def menu_view(request):
-    return render(request, 'menu.html')
 
 def userInput_view(request):
     return render(request, 'userInput.html')
@@ -75,3 +73,15 @@ def submit_input(request):
 def summary_view(request):
     return render(request, "summary.html")
     
+def menu_view(request):
+    return render(request, 'menu.html')
+
+def user_summary(request):
+    user_id = request.user.id
+    user_summary_sa = Users.objects.all(UserId = user_id)
+    user_summary_ex = Expenditures.objects.all(UserId = user_id)
+    merged_data = list(user_summary_sa) + list(user_summary_ex)
+
+    return render(request, 'summary.html', {'merged_data': merged_data})
+
+
