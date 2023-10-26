@@ -40,24 +40,30 @@ def userInput_view(request):
     if request.method == 'GET':
         return render(request, 'userInput.html')
     else:
-        income = request.POST.get('income')
-        savings = request.POST.get('savings')
-        rent = request.POST.get('rent')
-        leisure = request.POST.get('leisure')
-        grocery = request.POST.get('grocery')
-        others = request.POST.get('others')
+        income = int(request.POST.get('income'))
+        savings = int(request.POST.get('savings'))
+        savings = income * savings / 100
+        rent = int(request.POST.get('rent'))
+        leisure = int(request.POST.get('leisure'))
+        grocery = int(request.POST.get('grocery'))
+        others = int(request.POST.get('others'))
+
+        remaining = income - savings
         Users.objects.create(
             income = income,
-            savings = savings
-        )
-        Expenditures.objects.create(
-            rent = rent,
-            leisure = leisure,
-            grocery = grocery,
-            others = others,
+            savings = savings,
+            remaining = remaining,
             user = request.user
         )
-        return redirect('user_summary')
+        Expenditures.objects.create(
+            rent = remaining * rent / 100,
+            leisure = remaining * leisure / 100,
+            grocery = remaining * grocery / 100,
+            others = remaining * others / 100,
+            user = request.user
+
+        )
+        return redirect('/summary')
     
 def menu_view(request):
     return render(request, 'menu.html')
@@ -65,7 +71,9 @@ def menu_view(request):
 def user_summary(request):
     users_data = Users.objects.all()
     expenditures_data = Expenditures.objects.all()
+    merged_data = list(users_data) + list(expenditures_data)
     return render(request, 'summary.html', {'users_data': users_data, 'expenditures_data' : expenditures_data})
+    #return render(request, 'summary.html', {'merged_data': merged_data})
 #     user_id = request.user.id
 #     user_summary_sa = Users.objects.all(UserId = user_id)
 #     user_summary_ex = Expenditures.objects.all(UserId = user_id)
@@ -110,10 +118,11 @@ def user_summary(request):
 #         )
 #         return redirect('summary')
 
-# def summary_view(request):
-#     users_data = Users.objects.all()
-#     expenditures_data = Expenditures.objects.all()
-#     return render(request, 'summary.html', {'users_data': users_data, 'expenditures_data' : expenditures_data})
+'''
+def summary_view(request):
+    users_data = Users.objects.all()
+    expenditures_data = Expenditures.objects.all()
+    return render(request, 'summary.html', {'users_data': users_data, 'expenditures_data' : expenditures_data})
     
-
+'''
 

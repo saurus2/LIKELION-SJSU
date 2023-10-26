@@ -17,7 +17,6 @@ class Expenditures(models.Model):
     leisure = models.IntegerField(verbose_name= 'Leisure', default=0, blank = True)
     grocery = models.IntegerField(verbose_name= 'Grocery', default=0, blank = True)
     others = models.IntegerField(verbose_name= 'Others', default=0, blank = True)
-    month = models.IntegerField(verbose_name= 'Month', default=0, blank = True)
-    year = models.IntegerField(verbose_name= 'Year', default=0, blank = True)
+    date_and_time = models.DateField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
 

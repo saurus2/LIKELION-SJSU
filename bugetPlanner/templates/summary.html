@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Merged Data</title>
+    <title>Summary of your Data</title>
 </head>
 <body>
-    <h1>Merged Data</h1>
+    <h1>Summary for your Budget</h1>
     <ul>
         {% for item in users_data %}
+            <h2>Summary for Income & Savings</h2>
             <li>income is {{ item.income}}</li>
             <li>saving is {{ item.savings}}</li>
             <li>remaining is {{ item.remaining}}</li>
+            <br>
         {% endfor %}
         {% for item in expenditures_data %}
+            <h2>Summary for expenditures</h2>
             <li>rent is {{ item.rent}}</li>
             <li>leisure is {{ item.leisure}}</li>
             <li>grocery is {{ item.grocery}}</li>
             <li>others is {{ item.others}}</li>
+            <br>
         {% endfor %}
     </ul>
 </body>
