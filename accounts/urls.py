@@ -11,5 +11,4 @@ urlpatterns = [
     path('logout/', logout_view, name= 'logout'),
     path('menu/', menu_view, name= 'menu'),
     path('userInput/', userInput_view, name = 'userInput'),
-    path('user/<int:user_id>/', user_summary, name='user_summary'),
 ]
