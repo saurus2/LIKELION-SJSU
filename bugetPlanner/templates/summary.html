@@ -6,9 +6,16 @@
 <body>
     <h1>Merged Data</h1>
     <ul>
-        {% for item in merged_data %}
-            <li>{{ item.field_name }}</li>
-            <!-- Display other fields as needed -->
+        {% for item in users_data %}
+            <li>income is {{ item.income}}</li>
+            <li>saving is {{ item.savings}}</li>
+            <li>remaining is {{ item.remaining}}</li>
+        {% endfor %}
+        {% for item in expenditures_data %}
+            <li>rent is {{ item.rent}}</li>
+            <li>leisure is {{ item.leisure}}</li>
+            <li>grocery is {{ item.grocery}}</li>
+            <li>others is {{ item.others}}</li>
         {% endfor %}
     </ul>
 </body>
