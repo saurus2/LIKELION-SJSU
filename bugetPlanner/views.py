@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from .models import Users, Expenditures
 from django.contrib.auth import get_user_model
+from django.shortcuts import get_object_or_404
 
 # Create your views here.
 def planner_view(request):
@@ -68,10 +69,14 @@ def userInput_view(request):
 def menu_view(request):
     return render(request, 'menu.html')
 
+@login_required
 def user_summary(request):
-    users_data = Users.objects.all()
-    expenditures_data = Expenditures.objects.all()
-    merged_data = list(users_data) + list(expenditures_data)
+    users_data = Users.objects.filter(user_id=request.user)
+    expenditures_data = Expenditures.objects.filter(user_id = request.user)
+    merged_data = {
+        'user_data': users_data,
+        'expenditures_data': expenditures_data,
+    }
     return render(request, 'summary.html', {'users_data': users_data, 'expenditures_data' : expenditures_data})
     #return render(request, 'summary.html', {'merged_data': merged_data})
 #     user_id = request.user.id

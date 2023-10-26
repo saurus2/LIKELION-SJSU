@@ -22,6 +22,7 @@
 </head>
 <body>
     <h1>Summary for your Budget</h1>
+    
     <ul>
         {% for item in users_data %}
             <h2>Summary for Income & Savings</h2>
@@ -36,6 +37,7 @@
             <li>leisure is {{ item.leisure}}</li>
             <li>grocery is {{ item.grocery}}</li>
             <li>others is {{ item.others}}</li>
+            <br>
             <br>
         {% endfor %}
     </ul>
