@@ -60,6 +60,10 @@
             padding: 10px 20px;
             cursor: pointer;
         }
+
+        .error {
+        color: red;
+        }
     </style>
 </head>
 
@@ -68,6 +72,9 @@
         <h2>Expense Tracker</h2>
         <form method="POST" action="">
         {% csrf_token %}
+        {% if error_message %}
+            <p class="error">{{ error_message }}</p>
+        {% endif %}
             <div class="input-group">
                 <label for="income">Income:</label>
                 <input type="number" id="income" name="income" required>

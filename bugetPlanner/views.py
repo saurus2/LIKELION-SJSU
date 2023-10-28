@@ -33,38 +33,48 @@ def get_all_users():
 
 @login_required
 def userInput_view(request):
+    
     if request.user.is_authenticated:
         print("authenticate")
     else:
         print("Not HAPPENING")
 
+    error_message = None
     if request.method == 'GET':
         return render(request, 'userInput.html')
     else:
-        income = int(request.POST.get('income'))
-        savings = int(request.POST.get('savings'))
-        savings = income * savings / 100
-        rent = int(request.POST.get('rent'))
-        leisure = int(request.POST.get('leisure'))
-        grocery = int(request.POST.get('grocery'))
-        others = int(request.POST.get('others'))
+        try:
+            income = int(request.POST.get('income'))
+            savings = int(request.POST.get('savings'))
+            savings = income * savings / 100
+            rent = int(request.POST.get('rent'))
+            leisure = int(request.POST.get('leisure'))
+            grocery = int(request.POST.get('grocery'))
+            others = int(request.POST.get('others'))
 
-        remaining = income - savings
-        Users.objects.create(
-            income = income,
-            savings = savings,
-            remaining = remaining,
-            user = request.user
-        )
-        Expenditures.objects.create(
-            rent = remaining * rent / 100,
-            leisure = remaining * leisure / 100,
-            grocery = remaining * grocery / 100,
-            others = remaining * others / 100,
-            user = request.user
+            remaining = income - savings
+            if rent+leisure+grocery+others == 100:
+                Users.objects.create(
+                    income = income,
+                    savings = savings,
+                    remaining = remaining,
+                    user = request.user
+                )
+                Expenditures.objects.create(
+                    rent = remaining * rent / 100,
+                    leisure = remaining * leisure / 100,
+                    grocery = remaining * grocery / 100,
+                    others = remaining * others / 100,
+                    user = request.user
+                )
+                return redirect('/summary')
+            else:
+                error_message = "Sum of percentages for (rent, leisure, grocery, others) doesn't add up to 100%. Please try again."
 
-        )
-        return redirect('/summary')
+        except ValueError:
+            error_message = "Invalid input. Please enter a valid number."
+
+        return render(request, 'userInput.html', {'error_message': error_message})
     
 def menu_view(request):
     return render(request, 'menu.html')
