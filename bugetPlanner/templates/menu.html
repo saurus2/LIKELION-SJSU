@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Menu</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .buttons {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
         .menu {
             list-style-type: none;
             padding: 0;
@@ -43,6 +59,8 @@
             window.location.href = url;
         }
     </script>
+    <br>
+    <a class="buttons" href="{% url 'home' %}">Home</a>
 </body>
 
 </html>

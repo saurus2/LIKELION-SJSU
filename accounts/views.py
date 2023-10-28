@@ -14,7 +14,7 @@ def signup_view(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             instance = form.save()
-            return redirect('accounts:login')
+            return redirect('home')
         else:
             return redirect('accounts:signup')
 
